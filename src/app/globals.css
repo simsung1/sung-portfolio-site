@@ -17,3 +17,12 @@ body {
   -webkit-font-smoothing: antialiased; /*Makes font look sharper and cleaner, esp on Macbooks*/
   -moz-osx-font-smoothing: grayscale;
 }
+
+.scrollbar-invisible {
+  scrollbar-width: none;          /* Firefox */
+}
+
+.scrollbar-invisible::-webkit-scrollbar {
+  width: 0px;                     /* Chrome, Safari */
+  background: transparent; 
+}

@@ -1,9 +1,13 @@
+import ScrollBannerNav from "./ScrollBannerNav"
+
 export default function WelcomeBanner() {
+    
+    const navItems = ["Overview", "Education", "Hobbies"];
     return (
        <>
-        <div className="mt-10">
-            <h1 className="font-bold text-3xl font-sharpsans">Testing abc font</h1>
-            <h1 className="font-bold text-3xl">Testing abc font</h1>
+        <div className="my-10">
+            <h1 className="text-3xl font-sharpsans text-center mb-5">Hi, I&apos;m Sung</h1>
+            <ScrollBannerNav navItems={navItems}/>
         </div>
        </>
     )
