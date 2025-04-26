@@ -50,7 +50,7 @@ const ImageCarousel = () => {
     ];
 
     return (
-        <div className="relative w-full max-w-[1440px] h-[70vh] max-h-[640px] mx-auto md:h-[30vh] lg:h-[70vh]">
+        <div className="relative w-full max-w-[1440px] h-[70vh] mb-10 max-h-[640px] mx-auto md:h-[30vh] lg:h-[70vh]">
             <Slider
                 {...settings}
                 nextArrow={<NextArrow />}

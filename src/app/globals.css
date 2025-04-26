@@ -2,6 +2,7 @@
 @import 'slick-carousel/slick/slick.css';
 @import 'slick-carousel/slick/slick-theme.css';
 
+/* SamsungOne Regular */
 @font-face {
   font-family: 'SamsungOne';
   src: url('/fonts/SamsungOne-400.ttf') format('truetype');
@@ -9,6 +10,7 @@
   font-style: normal;
 }
 
+/* SamsungOne Bold */
 @font-face {
   font-family: 'SamsungOne';
   src: url('/fonts/SamsungOne-700.ttf') format('truetype');
@@ -16,18 +18,17 @@
   font-style: normal;
 }
 
+/* SamsungSharpSans Bold */
 @font-face {
   font-family: 'SamsungSharpSans';
   src: url('/fonts/SamsungSharpSans-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
+/* Default font stack */
 body {
-  font-family: 'SamsungOne', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
-}
-
-.image-slider-container .slick-prev:before,
-.image-slider-container .slick-next:before {
-  color: black;
+  font-family: 'SamsungOne', 'SamsungSharpSans', sans-serif;
+  -webkit-font-smoothing: antialiased; /*Makes font look sharper and cleaner, esp on Macbooks*/
+  -moz-osx-font-smoothing: grayscale;
 }
