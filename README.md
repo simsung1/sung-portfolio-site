@@ -4,3 +4,8 @@ Welcome to my portfolio website! Thank you for taking the time to look around. M
 I also try to use semantic commit messages for best practice and as my skills and portfolio improve, I hope to optimize what I've built more in the future.
 
 Enjoy looking around and I look forward to hearing from you!
+
+To do:
+- make image carousel component reusable, take image array as a prop
+- make footer
+- make cards for banner section displays
