@@ -2,33 +2,18 @@
 @import 'slick-carousel/slick/slick.css';
 @import 'slick-carousel/slick/slick-theme.css';
 
-/* SamsungOne Regular */
-@font-face {
-  font-family: 'SamsungOne';
-  src: url('/fonts/SamsungOne-400.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* SamsungOne Bold */
-@font-face {
-  font-family: 'SamsungOne';
-  src: url('/fonts/SamsungOne-700.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* SamsungSharpSans Bold */
-@font-face {
-  font-family: 'SamsungSharpSans';
-  src: url('/fonts/SamsungSharpSans-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
+/* @layer base required to make tailwind config recognize font-family variables */
+@layer base { 
+  .font-samsung {
+    font-family: var(--font-samsung-one);
+  }
+  .font-sharpsans {
+    font-family: var(--font-sharpsans);
+  }
 }
 
 /* Default font stack */
 body {
-  font-family: 'SamsungOne', 'SamsungSharpSans', sans-serif;
   -webkit-font-smoothing: antialiased; /*Makes font look sharper and cleaner, esp on Macbooks*/
   -moz-osx-font-smoothing: grayscale;
 }

@@ -6,8 +6,8 @@ module.exports = {
     theme: {
       extend: {
         fontFamily: {
-          samsung: ['SamsungOne', 'sans-serif'],
-          sharpsans: ['SamsungSharpSans', 'sans-serif'],
+          samsung: 'var(--font-samsung-one)',
+          sharpsans: 'var(--font-sharpsans)',
         },
       },
     },
