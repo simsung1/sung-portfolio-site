@@ -3,19 +3,31 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const samsungOne = localFont({
-  src: [
-    { path: "../../public/fonts/SamsungOne-400.ttf", weight: "400", style: "normal" },
-    { path: "../../public/fonts/SamsungOne-700.ttf", weight: "700", style: "bold" },
-  ],
-  variable: "--font-samsung-one", // Variable for SamsungOne
+    src: [
+        {
+            path: "../../public/fonts/SamsungOne-400.ttf",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "../../public/fonts/SamsungOne-700.ttf",
+            weight: "700",
+            style: "bold",
+        },
+    ],
+    variable: "--font-samsung-one",
 });
 
 // Define SamsungSharpSans font
 const sharpSans = localFont({
-  src: [
-    { path: "../../public/fonts/SamsungSharpSans-Bold.ttf", weight: "700", style: "normal" },
-  ],
-  variable: "--font-sharpsans", // Variable for SamsungSharpSans
+    src: [
+        {
+            path: "../../public/fonts/SamsungSharpSans-Bold.ttf",
+            weight: "700",
+            style: "normal",
+        },
+    ],
+    variable: "--font-sharpsans",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +43,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${samsungOne.variable} ${sharpSans.variable} font-samsung antialiased`}>
+            <body
+                className={`${samsungOne.variable} ${sharpSans.variable} font-samsung antialiased`}
+            >
                 {children}
             </body>
         </html>
