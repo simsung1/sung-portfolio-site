@@ -21,13 +21,13 @@ export default function ScrollBannerNav({navItems}: ScrollableNavBarProps) {
     };
     return (
         <>
-            <div className="px-4 w-full overflow-x-auto whitespace-nowrap flex justify-between lg:justify-center scrollbar-invisible">
+            <div className="px-8 w-full overflow-x-auto whitespace-nowrap flex justify-around lg:justify-center gap-6 scrollbar-invisible">
                 {navItems.map((item, index) => (
                     <button
                         key={item}
                         ref={(el) => {(buttonRefs.current[index] = el)}}
                         onClick={() => handleClick(index)}
-                        className={`font-bold flex-shrink-0 py-1 my-2 mx-4 border-b-2 transition-all duration-600 ${activeIndex === index ? 'border-black' : 'border-transparent'}`}
+                        className={`font-bold flex-shrink-0 py-1 my-2 border-b-2 transition-all duration-600 ${activeIndex === index ? 'border-black' : 'border-transparent'}`}
                     >
                         {item}
                     </button>
