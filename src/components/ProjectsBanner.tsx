@@ -10,13 +10,11 @@ export default function ProjectsBanner() {
     ];
     return (
         <>
-            <div>
-                <div className="w-full">
-                    <h1 className="text-3xl font-sharpsans text-center py-3">
-                        Collection of Projects
-                    </h1>
-                    <ScrollBannerNav navItems={navItems} />
-                </div>
+            <div className="w-full bg-black text-white pt-5">
+                <h1 className="text-3xl font-sharpsans text-center py-3">
+                    Collection of Projects
+                </h1>
+                <ScrollBannerNav navItems={navItems} activeBorderColor="white"/>
             </div>
         </>
     );

@@ -1,14 +1,17 @@
 "use client";
-import React, { useRef, useState  } from "react";
+import React, { useRef, useState } from "react";
 
 interface ScrollableNavBarProps {
     navItems: string[];
-  }
+    activeBorderColor: string;
+}
 
-export default function ScrollBannerNav({navItems}: ScrollableNavBarProps) {
-
+export default function ScrollBannerNav({
+    navItems,
+    activeBorderColor,
+}: ScrollableNavBarProps) {
     const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
-    const [activeIndex, setActiveIndex] = useState<number | null>(0);
+    const [activeIndex, setActiveIndex] = useState<number | null>(0); //initialized to 0 for first element
 
     const handleClick = (index: number) => {
         setActiveIndex(index);
@@ -16,7 +19,6 @@ export default function ScrollBannerNav({navItems}: ScrollableNavBarProps) {
             behavior: "smooth",
             inline: "center",
             block: "nearest",
-
         });
     };
     return (
@@ -25,9 +27,17 @@ export default function ScrollBannerNav({navItems}: ScrollableNavBarProps) {
                 {navItems.map((item, index) => (
                     <button
                         key={item}
-                        ref={(el) => {(buttonRefs.current[index] = el)}}
+                        ref={(el) => {
+                            buttonRefs.current[index] = el;
+                        }}
                         onClick={() => handleClick(index)}
-                        className={`font-bold flex-shrink-0 py-1 my-2 border-b-2 transition-all duration-600 ${activeIndex === index ? 'border-black' : 'border-transparent'}`}
+                        className={`font-bold flex-shrink-0 py-1 my-2 border-b-2 transition-all duration-600 ${
+                            activeIndex === index
+                                ? activeBorderColor === "white"
+                                    ? "border-white"
+                                    : "border-black"
+                                : "border-transparent"
+                        }`}
                     >
                         {item}
                     </button>
