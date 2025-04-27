@@ -43,9 +43,9 @@ const ImageCarousel = () => {
     };
 
     const images = [
-        { src: "/images/bash.png", alt: "Image 1", bgColor: 'bg-black', divContent: <div className="text-red-400 z-1 absolute top-5 left-5">Test Div</div>},
-        { src: "/images/github.png", alt: "Image 2", bgColor: 'bg-yellow-400' },
-        { src: "/images/react.png", alt: "Image 3", bgColor: 'bg-blue-400' },
+        { src: "/images/wsib-edit.jpg", alt: "WSIB Logo with Summer Student text", styling: "object-contain object-bottom px-10 pb-5 md:object-right", bgColor: 'bg-[#2A3452]', divContent: <div className="text-white text-center z-1 absolute top-15 md:top-1/3 md:w-3/5 lg:w-1/2 md:left-5"><div className="font-sharpsans text-3xl ">Summer Student Position Starting in MAY</div><div className="text-xl mt-2">IT Service Delivery</div></div>},
+        { src: "/images/fanshawecampus.jpg", alt: "Fanshawe College T building", styling: "object-cover brightness-50", divContent: <div className="text-white text-center z-1 absolute top-15 md:top-1/3 md:w-3/5 lg:w-1/2 lg:left-5 flex flex-col items-center"><div className="font-sharpsans text-3xl ">First Year of CPA3 Program <span className="text-red-600">Completed</span></div><div className="text-xl mt-2 text-white">Second Year Starts Sept 2025</div><a href="#" target="_blank" rel="noopener noreferrer" className="mt-10 md:mt-3 w-fit rounded-full bg-white text-black p-4">Learn More</a></div>},
+        { src: "/images/fcvlogo.jpg", alt: "Forest City Vape Logo", styling: "object-contain object-bottom px-10 pb-5 md:object-right", bgColor: 'bg-[#5B7E55]', divContent: <div className="text-white text-center z-1 absolute top-1/3 md:w-3/5 lg:w-1/2 md:left-10 flex flex-col items-center"><div className="font-sharpsans text-3xl ">Celebrating One Year with FCV</div><div className="text-xl mt-2">Thank you to the team for the amazing support!</div><a href="#" target="_blank" rel="noopener noreferrer" className="mt-5 md:mt-3 w-fit rounded-full bg-black text-white p-4">Learn More</a></div> },
         { src: "/images/vue.png", alt: "Image 4", bgColor: 'bg-green-200' },
     ];
 
@@ -57,12 +57,12 @@ const ImageCarousel = () => {
                 prevArrow={<PrevArrow />}
             >
                 {images.map((img, index) => (
-                    <div key={index} className="relative h-[70vh] w-full md:h-[30vh] lg:h-[70vh]">
+                    <div key={index} className={`relative h-[70vh] w-full md:h-[30vh] lg:h-[70vh] ${img.bgColor}`}>
                         <Image
                             src={img.src}
                             alt={img.alt}
                             fill
-                            className={`object-contain ${img.bgColor}`}
+                            className={img.styling}
                         />
                         {img.divContent}
                     </div>
