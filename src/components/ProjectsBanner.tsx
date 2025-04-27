@@ -17,7 +17,7 @@ export default function ProjectsBanner() {
                     Collection of Projects
                 </h1>
                 <ScrollBannerNav navItems={navItems} activeBorderColor="white"/>
-                <ProjectTab bgColor="bg-black" btmText="Test Text"/>
+                <ProjectTab bgColor="bg-black" btmText="Test Text" gradientIndex={0}/>
             </div>
         </>
     );

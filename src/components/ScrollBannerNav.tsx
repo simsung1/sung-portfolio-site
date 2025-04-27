@@ -23,7 +23,7 @@ export default function ScrollBannerNav({
     };
     return (
         <>
-            <div className="px-8 w-full overflow-x-auto whitespace-nowrap flex justify-around lg:justify-center gap-8 scrollbar-invisible">
+            <div className="px-8 w-full overflow-x-auto whitespace-nowrap flex justify-around md:justify-center gap-8 scrollbar-invisible">
                 {navItems.map((item, index) => (
                     <button
                         key={item}
