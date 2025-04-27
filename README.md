@@ -6,6 +6,9 @@ I also try to use semantic commit messages for best practice and as my skills an
 Enjoy looking around and I look forward to hearing from you!
 
 To do:
-- make image carousel component reusable, take image array as a prop
 - make footer
-- make cards for banner section displays
+- create contact section
+- extras section
+- extra page that links to welcome banner
+- link scroll banner nav to new components when different banner selected
+- upload more pictures and content to populate about, projects, experience 

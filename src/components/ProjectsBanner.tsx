@@ -13,7 +13,7 @@ export default function ProjectsBanner() {
     return (
         <>
             <div className="w-full bg-black text-white py-5">
-                <h1 className="text-3xl font-sharpsans text-center py-3">
+                <h1 className="text-2xl font-sharpsans text-center pt-3">
                     Collection of Projects
                 </h1>
                 <ScrollBannerNav navItems={navItems} activeBorderColor="white"/>

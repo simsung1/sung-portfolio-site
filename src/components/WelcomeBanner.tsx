@@ -7,11 +7,11 @@ export default function WelcomeBanner() {
     return (
         <>
             <div className="w-full mt-10 mb-4">
-                <h1 className="text-3xl font-sharpsans text-center py-3">
+                <h1 className="text-2xl font-sharpsans text-center pt-3">
                     Hi, I&apos;m Sung
                 </h1>
                 <ScrollBannerNav navItems={navItems} activeBorderColor="black"/>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 py-2 w-full">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 py-2 *:w-full">
                     <div className="col-span-2 md:row-span-2">
                         <DualCard />
                     </div>
