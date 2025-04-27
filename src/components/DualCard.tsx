@@ -1,10 +1,21 @@
+import Image from "next/image";
+
 export default function DualCard() {
     return (
         <>
-            <div className="flex w-full p-4 gap-1 md:flex-col">
-                <div className="w-full rounded-l-lg md:rounded-t-lg bg-[#F4F4F4]">hi</div>
-                <div className="w-full rounded-r-lg md:rounded-b-lg bg-[#F4F4F4]">bye</div>
+            <div className="flex w-full gap-1 md:flex-col">
+                <div className="w-1/2 p-4 rounded-l-3xl md:rounded-t-3xl bg-[#F4F4F4] relative aspect-[5/6] md:aspect-square">
+                    <Image
+                        src="/images/tabs10.avif"
+                        alt="tabs10 tablet"
+                        fill
+                        className={`object-contain`}
+                    />
+                </div>
+                <div className="w-1/2 p-2 rounded-r-3xl md:rounded-b-3xl bg-[#F4F4F4] flex items-center justify-center">
+                    bye
+                </div>
             </div>
         </>
-    )
+    );
 }
