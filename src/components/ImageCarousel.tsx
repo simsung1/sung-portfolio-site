@@ -55,14 +55,14 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     };
 
     return (
-        <div className="relative w-full max-w-[1440px] h-[70vh] mb-10 max-h-[640px] mx-auto md:h-[30vh] lg:h-[70vh]">
+        <div className="relative w-full max-w-[1440px] h-[70vh] md:h-auto mx-auto md:aspect-[2.25/1]">
             <Slider
                 {...settings}
                 nextArrow={<NextArrow />}
                 prevArrow={<PrevArrow />}
             >
                 {images.map((img, index) => (
-                    <div key={index} className={`relative h-[70vh] w-full md:h-[30vh] lg:h-[70vh] ${img.bgColor}`}>
+                    <div key={index} className={`relative w-full max-w-[1440px] h-[70vh] md:h-auto mx-auto md:aspect-[2.25/1] ${img.bgColor}`}>
                         <Image
                             src={img.src}
                             alt={img.alt}
