@@ -11,12 +11,22 @@ export default function WelcomeBanner() {
                     Hi, I&apos;m Sung
                 </h1>
                 <ScrollBannerNav navItems={navItems} />
-                <div className="flex flex-wrap w-screen gap-4 px-6">
-                    <DualCard />
-                    <SoloCard />
-                    <SoloCard />
-                    <SoloCard />
-                    <SoloCard />
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-6 w-screen">
+                    <div className="col-span-2 md:row-span-2">
+                        <DualCard />
+                    </div>
+                    <div className="col-span-1">
+                        <SoloCard />
+                    </div>
+                    <div className="col-span-1">
+                        <SoloCard />
+                    </div>
+                    <div className="col-span-1">
+                        <SoloCard />
+                    </div>
+                    <div className="col-span-1">
+                        <SoloCard />
+                    </div>
                 </div>
             </div>
         </>
