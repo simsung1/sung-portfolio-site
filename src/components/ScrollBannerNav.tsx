@@ -21,7 +21,7 @@ export default function ScrollBannerNav({navItems}: ScrollableNavBarProps) {
     };
     return (
         <>
-            <div className="px-8 w-full overflow-x-auto whitespace-nowrap flex justify-around lg:justify-center gap-6 scrollbar-invisible">
+            <div className="px-8 pb-4 w-full overflow-x-auto whitespace-nowrap flex justify-around lg:justify-center gap-6 scrollbar-invisible">
                 {navItems.map((item, index) => (
                     <button
                         key={item}
