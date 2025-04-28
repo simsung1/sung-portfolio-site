@@ -13,7 +13,7 @@ export default function ExperienceBanner() {
     return (
         <>
             <div className="w-full py-5">
-                <h1 className="text-3xl font-sharpsans text-center pt-3">
+                <h1 className="text-2xl font-sharpsans text-center pt-3">
                     Work Experience
                 </h1>
                 <ScrollBannerNav

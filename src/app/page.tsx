@@ -3,6 +3,7 @@ import ImageCarousel from "@/components/ImageCarousel";
 import WelcomeBanner from "@/components/WelcomeBanner";
 import ProjectsBanner from "@/components/ProjectsBanner";
 import ExperienceBanner from "@/components/ExperienceBanner";
+import Footer  from "@/components/Footer";
 import { images } from "@/data/carouselImages";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
             <WelcomeBanner />
             <ProjectsBanner />
             <ExperienceBanner />
+            <Footer />
         </div>
     );
 }
