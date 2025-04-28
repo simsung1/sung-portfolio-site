@@ -4,11 +4,13 @@ import React, { useRef, useState } from "react";
 interface ScrollableNavBarProps {
     navItems: string[];
     activeBorderColor: "white" | "black";
+    onNavClick?: (index: number) => void; 
 }
 
 export default function ScrollBannerNav({
     navItems,
     activeBorderColor,
+    onNavClick
 }: ScrollableNavBarProps) {
     const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
     const [activeIndex, setActiveIndex] = useState<number | null>(0); //initialized to 0 for first element
@@ -20,6 +22,9 @@ export default function ScrollBannerNav({
             inline: "center",
             block: "nearest",
         });
+        console.log(index);
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+        onNavClick && onNavClick(index);
     };
     return (
         <>
@@ -31,7 +36,7 @@ export default function ScrollBannerNav({
                             buttonRefs.current[index] = el;
                         }}
                         onClick={() => handleClick(index)}
-                        className={`font-bold flex-shrink-0 py-1 my-2 border-b-2 transition-all duration-600 ${
+                        className={`font-bold flex-shrink-0 py-1 my-2 border-b-2 transition-all duration-600 cursor-pointer ${
                             activeIndex === index
                                 ? activeBorderColor === "white"
                                     ? "border-white"
