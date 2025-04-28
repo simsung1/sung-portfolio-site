@@ -6,8 +6,6 @@ I also try to use semantic commit messages for best practice and as my skills an
 Enjoy looking around and I look forward to hearing from you!
 
 To do:
-- make footer
-- create contact section
 - extras section
 - extra page that links to welcome banner
 - link scroll banner nav to new components when different banner selected

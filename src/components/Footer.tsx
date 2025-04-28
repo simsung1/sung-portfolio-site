@@ -17,6 +17,7 @@ export default function Footer() {
                             href="https://github.com/simsung1"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="Check out my Github"
                         >
                             <FaGithub size={25} />
                         </a>
@@ -24,6 +25,7 @@ export default function Footer() {
                             href="https://www.linkedin.com/in/sungminsim/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="Visit my LinkedIn profile"
                         >
                             <FaLinkedin size={25} />
                         </a>
@@ -31,6 +33,7 @@ export default function Footer() {
                             href="https://paypal.me/SungMinS?country.x=CA&locale.x=en_US"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="Support me on Paypal"
                         >
                             <FaPaypal size={25} />
                         </a>
@@ -38,6 +41,7 @@ export default function Footer() {
                             href="mailto:sim.sungmin@outlook.com"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="Send me an email"
                         >
                             <MdEmail size={25} />
                         </a>
