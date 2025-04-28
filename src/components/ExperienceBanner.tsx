@@ -12,7 +12,7 @@ export default function ExperienceBanner() {
 
     return (
         <>
-            <div className="w-full py-5">
+            <div className="w-full pt-5 pb-10">
                 <h1 className="text-2xl font-sharpsans text-center pt-3">
                     Work Experience
                 </h1>
