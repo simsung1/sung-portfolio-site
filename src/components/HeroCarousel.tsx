@@ -40,7 +40,7 @@ const PrevArrow = (props: { onClick?: () => void }) => {
     );
 };
 
-const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
+const HeroCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -77,4 +77,4 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     );
 };
 
-export default ImageCarousel;
+export default HeroCarousel;

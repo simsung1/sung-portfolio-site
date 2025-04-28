@@ -1,5 +1,5 @@
 import Nav from "@/components/Nav";
-import ImageCarousel from "@/components/ImageCarousel";
+import HeroCarousel from "@/components/HeroCarousel";
 import WelcomeBanner from "@/components/WelcomeBanner";
 import ProjectsBanner from "@/components/ProjectsBanner";
 import ExperienceBanner from "@/components/ExperienceBanner";
@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <div>
             <Nav />
-            <ImageCarousel images={images} />
+            <HeroCarousel images={images} />
             <WelcomeBanner />
             <ProjectsBanner />
             <ExperienceBanner />
