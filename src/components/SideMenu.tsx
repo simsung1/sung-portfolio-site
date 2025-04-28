@@ -26,11 +26,11 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                     </button>
                 </div>
                 <ul id="menu-list" className="flex flex-col items-start ml-7 gap-4">
-                    <li className="font-sharpsans font-bold text-2xl"><a href="#">About</a></li>
-                    <li className="font-sharpsans font-bold text-2xl"><a href="#">Projects</a></li>
-                    <li className="font-sharpsans font-bold text-2xl"><a href="#">Experience</a></li>
-                    <li className="font-sharpsans font-bold text-2xl"><a href="#">Contact</a></li>
-                    <li className="font-sharpsans font-bold text-2xl"><a href="#">Extras</a></li>
+                    <li className="font-sharpsans font-bold text-2xl"><a href="#about" onClick={onClose}>About</a></li>
+                    <li className="font-sharpsans font-bold text-2xl"><a href="#projects" onClick={onClose}>Projects</a></li>
+                    <li className="font-sharpsans font-bold text-2xl"><a href="#experience" onClick={onClose}>Experience</a></li>
+                    <li className="font-sharpsans font-bold text-2xl"><a href="#contact" onClick={onClose}>Contact</a></li>
+                    <li className="font-sharpsans font-bold text-2xl"><a href="#" onClick={onClose}>Extras</a></li>
                 </ul>
                 <hr className="text-gray-200 w-9/10 mx-auto my-5"/>
             </div>

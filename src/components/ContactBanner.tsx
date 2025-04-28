@@ -7,7 +7,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import InfoCard from "./InfoCard";
 import Image from "next/image";
 
-export default function ContactBanner() {
+export default function ContactBanner({ id }: { id: string }) {
     const sliderRef = useRef<Slider | null>(null);
     const [activeButton, setActiveButton] = useState<number>(0);
 
@@ -32,8 +32,8 @@ export default function ContactBanner() {
         },
     };
     return (
-        <div className="py-5 mb-2">
-            <h1 className="text-2xl font-sharpsans text-center py-3">
+        <div id={id} className="py-5 mb-2">
+            <h1 className="text-2xl font-sharpsans text-center py-3" tabIndex={-1}>
                 Get in Touch
             </h1>
             <div className="md:hidden">

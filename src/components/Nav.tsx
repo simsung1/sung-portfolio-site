@@ -31,21 +31,26 @@ export default function Nav() {
                         alt="Hamburger Icon"
                         width={30}
                         height={30}
-                        className="lg:hidden curso-pointer"
+                        className="lg:hidden cursor-pointer"
                         onClick={() => setMenuOpen(true)}
                     />
                     <div id="list-wrap" className="hidden lg:block">
-                        <ul
-                            id="menu-list"
-                            className="flex items-center ml-1 gap-4"
-                        >
-                            <li className="font-samsung font-bold">About</li>
-                            <li className="font-samsung font-bold">Projects</li>
+                        <ul className="flex items-center ml-1 gap-4">
                             <li className="font-samsung font-bold">
-                                Experience
+                                <a href="#about">About</a>
                             </li>
-                            <li className="font-samsung font-bold">Contact</li>
-                            <li className="font-samsung font-bold">Extras</li>
+                            <li className="font-samsung font-bold">
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li className="font-samsung font-bold">
+                                <a href="#experience">Experience</a>
+                            </li>
+                            <li className="font-samsung font-bold">
+                                <a href="#contact">Contact</a>
+                            </li>
+                            <li className="font-samsung font-bold">
+                                <a href="#extras">Extras</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

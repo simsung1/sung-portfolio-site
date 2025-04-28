@@ -1,7 +1,7 @@
 import ScrollBannerNav from "./ScrollBannerNav";
 import ProjectTab from "./ProjectTab";
 
-export default function ExperienceBanner() {
+export default function ExperienceBanner({ id }: { id: string }) {
     const navItems = [
         "WSIB",
         "Forest City Vape",
@@ -11,7 +11,7 @@ export default function ExperienceBanner() {
     ];
 
     return (
-        <>
+        <section id={id}>
             <div className="w-full pt-5 pb-10">
                 <h1 className="text-2xl font-sharpsans text-center pt-3">
                     Work Experience
@@ -22,6 +22,6 @@ export default function ExperienceBanner() {
                 />
                 <ProjectTab bgColor="" btmText="Test Text" gradientIndex={1}/>
             </div>
-        </>
+        </section>
     );
 }

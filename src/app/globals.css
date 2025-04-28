@@ -18,6 +18,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .scrollbar-invisible {
   scrollbar-width: none;          /* Firefox */
 }

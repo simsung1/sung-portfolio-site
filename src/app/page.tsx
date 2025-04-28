@@ -12,10 +12,10 @@ export default function Home() {
         <div>
             <Nav />
             <HeroCarousel images={images} />
-            <WelcomeBanner />
-            <ProjectsBanner />
-            <ExperienceBanner />
-            <ContactBanner />
+            <WelcomeBanner id="about" />
+            <ProjectsBanner id="projects" />
+            <ExperienceBanner id="experience" />
+            <ContactBanner id="contact" />
             <Footer />
         </div>
     );

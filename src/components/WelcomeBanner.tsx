@@ -2,10 +2,10 @@ import ScrollBannerNav from "./ScrollBannerNav";
 import DualCard from "./DualCard";
 import SoloCard from "./SoloCard";
 
-export default function WelcomeBanner() {
+export default function WelcomeBanner({ id }: { id: string }) {
     const navItems = ["Overview", "Education", "Hobbies"];
     return (
-        <>
+        <section id={id}>
             <div className="w-full mt-10 mb-4">
                 <h1 className="text-2xl font-sharpsans text-center pt-3">
                     Hi, I&apos;m Sung
@@ -29,6 +29,6 @@ export default function WelcomeBanner() {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     );
 }
