@@ -4,6 +4,7 @@ interface InfoCardProps {
     title: string;
     message: string;
     link: string;
+    image?: React.ReactNode;
     icon?: React.ReactNode;
     bgColor?: string;
     linkTitle?: string;
@@ -13,15 +14,19 @@ const InfoCard: React.FC<InfoCardProps> = ({
     title,
     message,
     link,
+    image,
     icon,
     bgColor = 'bg-[#cee7f5]',
     linkTitle = 'Visit Link'
 }) => {
     return (
         <div className={`${bgColor} aspect-square rounded-3xl p-4`}>
-            <div className="flex flex-col items-center justify-around h-full md:h-3/4">
+            <div className="flex flex-col items-center justify-around h-full">
                 <h2 className="text-xl font-bold text-center">{title}</h2>
-                <p>{message}</p>
+                <p className="lg:px-10">{message}</p>
+                <div className="hidden lg:block w-1/2 z-1 aspect-[2/1] relative rounded-lg overflow-hidden">
+                    {image}
+                </div>
                 <div className="flex mx-auto">
                     <a
                         href={link}

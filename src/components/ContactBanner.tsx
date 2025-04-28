@@ -5,6 +5,7 @@ import { HiDocumentDownload } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 import { RiInstagramFill } from "react-icons/ri";
 import InfoCard from "./InfoCard";
+import Image from "next/image";
 
 export default function ContactBanner() {
     const sliderRef = useRef<Slider | null>(null);
@@ -28,11 +29,11 @@ export default function ContactBanner() {
         slidesToScroll: 1,
         afterChange: (current: number) => {
             setActiveButton(current);
-        }
+        },
     };
     return (
         <div className="py-5 mb-2">
-            <h1 className="text-2xl font-sharpsans text-center pt-3">
+            <h1 className="text-2xl font-sharpsans text-center py-3">
                 Get in Touch
             </h1>
             <div className="md:hidden">
@@ -91,10 +92,7 @@ export default function ContactBanner() {
             </div>
             <div className="hidden md:flex px-7">
                 <div className="slider-container w-1/2 aspect-square mt-5">
-                    <Slider
-                        ref={sliderRef}
-                        {...settings2}
-                    >
+                    <Slider ref={sliderRef} {...settings2}>
                         <InfoCard
                             title="Hiring Managers and Recruiters"
                             message="Thank you for taking the time to navigate my
@@ -111,6 +109,14 @@ export default function ContactBanner() {
                                     full-time roles."
                             link="/files/SMS Resume.pdf"
                             bgColor="bg-[#F4F4F4]"
+                            image={
+                                <Image
+                                    src="/images/skills.png"
+                                    alt="Tech Stack Skills"
+                                    fill
+                                    className={`object-contain`}
+                                />
+                            }
                             icon={<HiDocumentDownload size={25} />}
                             linkTitle="Download My Resume"
                         />
@@ -125,6 +131,14 @@ export default function ContactBanner() {
                                     I'll consider a friends-and-family
                                     discount 😉"
                             link="https://www.instagram.com/sim.sung/"
+                            image={
+                                <Image
+                                    src="/images/friends.jpg"
+                                    alt="Friends around a piano"
+                                    fill
+                                    className={`object-cover`}
+                                />
+                            }
                             icon={<RiInstagramFill size={25} />}
                             linkTitle="Message me on Instagran"
                         />
@@ -140,21 +154,48 @@ export default function ContactBanner() {
                                     please feel free to do so!"
                             link="mailto:funnito@gmail.com"
                             bgColor="bg-orange-100"
+                            image={
+                                <Image
+                                    src="/images/globe.png"
+                                    alt="Earth Clipart"
+                                    fill
+                                    className={`object-contain`}
+                                />
+                            }
                             icon={<MdEmail size={25} />}
                             linkTitle="Send me a personal email"
                         />
                     </Slider>
                 </div>
-                <div
-                    className="w-1/2 aspect-square flex flex-col justify-center items-center"
-                >
-                    <button className={`font-sharpsans text-lg p-2 font-bold my-4 ${activeButton === 0 ? 'border-b-2 transition-all duration-300' : ''}`} onClick={() => goToSlide(0)}>
+                <div className="w-1/2 aspect-square flex flex-col justify-center items-center">
+                    <button
+                        className={`font-sharpsans text-lg p-2 font-bold my-4 ${
+                            activeButton === 0
+                                ? "border-b-2 transition-all duration-300"
+                                : ""
+                        }`}
+                        onClick={() => goToSlide(0)}
+                    >
                         Work
                     </button>
-                    <button className={`font-sharpsans text-lg p-2 font-bold my-4 ${activeButton === 1 ? 'border-b-2 transition-all duration-300' : ''}`} onClick={() => goToSlide(1)}>
+                    <button
+                        className={`font-sharpsans text-lg p-2 font-bold my-4 ${
+                            activeButton === 1
+                                ? "border-b-2 transition-all duration-300"
+                                : ""
+                        }`}
+                        onClick={() => goToSlide(1)}
+                    >
                         Personal
                     </button>
-                    <button className={`font-sharpsans text-lg p-2 font-bold my-4 ${activeButton === 2 ? 'border-b-2 transition-all duration-300' : ''}`} onClick={() => goToSlide(2)}>
+                    <button
+                        className={`font-sharpsans text-lg p-2 font-bold my-4 ${
+                            activeButton === 2
+                                ? "border-b-2 transition-all duration-300"
+                                : ""
+                        }`}
+                        onClick={() => goToSlide(2)}
+                    >
                         Visitors
                     </button>
                 </div>
