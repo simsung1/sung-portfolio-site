@@ -1,12 +1,4 @@
-import { ReactNode } from "react";
-
-interface CarouselImage {
-    src: string;
-    alt: string;
-    styling?: string;
-    bgColor?: string;
-    divContent?: ReactNode;
-}
+import { CarouselImage } from "@/types/carouselImage";
 
 export const images: CarouselImage[] = [
     {

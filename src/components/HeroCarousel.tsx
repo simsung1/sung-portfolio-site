@@ -2,15 +2,8 @@
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import { CarouselImage } from "@/types/carouselImage";
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
-
-interface CarouselImage {
-    src: string;
-    alt: string;
-    styling?: string;
-    bgColor?: string;
-    divContent?: React.ReactNode;
-}
 
 interface HeroCarouselProps {
     images: CarouselImage[];

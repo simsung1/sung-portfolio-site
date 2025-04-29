@@ -1,6 +1,6 @@
 import { WorkExperience } from "@/types/workExperience";
 
-export const workExperiences : WorkExperience[] = [
+export const projExperiences : WorkExperience[] = [
     {
         imgsrc: "/images/wsib-exp.png",
         imgalt: "Ghibli Image of Sung Coding Wearing WSIB Sweater",

@@ -55,24 +55,27 @@ export default function ExperienceBanner({ id, experiences }: ExperienceBannerPr
                                 : ""
                         }`}
                     >
-         
+                        {/* First Work Exp */}
                         <div className="w-1/5">
                             <ProjectTab experience={experiences[activeIndex]} />
                         </div>
 
-
-
+                         {/* Second Work Exp */}
                         <div className="w-1/5">
                             <ProjectTab experience={experiences[activeIndex]} />
                         </div>
 
+                         {/* Third Work Exp */}
+                        <div className="w-1/5">
+                            <ProjectTab experience={experiences[activeIndex]} />
+                        </div>
 
+                         {/* Fourth Work Exp */}
                         <div className="w-1/5">
                             <ProjectTab experience={experiences[activeIndex]} />
                         </div>
-                        <div className="w-1/5">
-                            <ProjectTab experience={experiences[activeIndex]} />
-                        </div>
+
+                         {/* Fifth Work Exp */}
                         <div className="w-1/5">
                             <ProjectTab experience={experiences[activeIndex]} />
                         </div>

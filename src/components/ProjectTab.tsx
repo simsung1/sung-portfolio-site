@@ -1,13 +1,5 @@
 import Image from "next/image";
-
-interface WorkExperience {
-    imgsrc: string;
-    imgalt: string;
-    bgColor?: string;
-    btmTitle: string;
-    btmText?: string
-    gradientIndex: 0 | 1 | 2;
-}
+import { WorkExperience } from "@/types/workExperience";
 
 interface ProjectTabProps {
     experience: WorkExperience;
