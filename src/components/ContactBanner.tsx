@@ -27,6 +27,8 @@ export default function ContactBanner({ id }: { id: string }) {
     const settings2 = {
         slidesToShow: 1,
         slidesToScroll: 1,
+        vertical: true,
+        verticalSwiping: true,
         afterChange: (current: number) => {
             setActiveButton(current);
         },

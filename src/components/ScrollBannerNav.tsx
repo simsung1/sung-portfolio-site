@@ -22,7 +22,6 @@ export default function ScrollBannerNav({
             inline: "center",
             block: "nearest",
         });
-        console.log(index);
         // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         onNavClick && onNavClick(index);
     };
