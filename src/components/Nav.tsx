@@ -16,13 +16,14 @@ export default function Nav() {
             >
                 <div
                     id="logo-wrap"
-                    className="h-16 flex justify-center items-center lg:mr-8"
+                    className="w-25 h-16 flex justify-center items-center lg:mr-8 relative"
                 >
                     <Image
                         src="/images/logo.png"
                         alt="Logo"
-                        width={100}
-                        height={100}
+                        fill
+                        className="object-contain"
+                        sizes="100px"
                     />
                 </div>
                 <div id="menu-wrap" className="flex items-center">

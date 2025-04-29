@@ -16,6 +16,7 @@ export default function ContactBanner({ id }: { id: string }) {
     };
 
     const settings = {
+        arrows: false,
         className: "center",
         infinite: true,
         centerPadding: "60px",

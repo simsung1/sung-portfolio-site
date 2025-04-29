@@ -2,11 +2,12 @@ import Image from "next/image";
 
 interface ProjectTabProps {
     bgColor: string;
-    btmText: string;
+    btmTitle: string;
+    btmText?: string
     gradientIndex: 0 | 1 | 2;
 }
 
-export default function ProjectTab({ bgColor, btmText, gradientIndex }: ProjectTabProps) {
+export default function ProjectTab({ bgColor, btmTitle, btmText, gradientIndex }: ProjectTabProps) {
     const gradientSelection: React.ReactNode[] = [
         <>
             <div
@@ -62,13 +63,16 @@ export default function ProjectTab({ bgColor, btmText, gradientIndex }: ProjectT
                     {gradientSelection[gradientIndex]}
                 </div>
                 <div className="font-sharpsans text-4xl text-center my-4">
+                    {btmTitle}
+                </div>
+                <div className="text-lg text-center mb-4">
                     {btmText}
                 </div>
                 <a
                     href="https://www.fanshawec.ca/programs/cpa3-computer-programming-and-analysis-co-op/courses-next"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-fit rounded-full bg-white text-black px-4 py-2 inline-block"
+                    className="w-fit rounded-full bg-[#F4F4F4] text-black px-4 py-2 inline-block"
                 >
                     Learn More
                 </a>

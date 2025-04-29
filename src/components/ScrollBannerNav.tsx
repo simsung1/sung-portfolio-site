@@ -19,7 +19,7 @@ export default function ScrollBannerNav({
         setActiveIndex(index);
         buttonRefs.current[index]?.scrollIntoView({
             behavior: "smooth",
-            inline: "center",
+            // inline: "center",
             block: "nearest",
         });
         // eslint-disable-next-line @typescript-eslint/no-unused-expressions
