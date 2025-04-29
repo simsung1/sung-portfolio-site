@@ -12,7 +12,7 @@ interface CarouselImage {
     divContent?: React.ReactNode;
 }
 
-interface ImageCarouselProps {
+interface HeroCarouselProps {
     images: CarouselImage[];
 }
 
@@ -40,7 +40,7 @@ const PrevArrow = (props: { onClick?: () => void }) => {
     );
 };
 
-const HeroCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
+const HeroCarousel: React.FC<HeroCarouselProps> = ({ images }) => {
     const settings = {
         dots: true,
         infinite: true,

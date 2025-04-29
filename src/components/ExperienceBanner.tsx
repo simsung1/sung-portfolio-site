@@ -3,7 +3,21 @@ import { useState } from "react";
 import ScrollBannerNav from "./ScrollBannerNav";
 import ProjectTab from "./ProjectTab";
 
-export default function ExperienceBanner({ id }: { id: string }) {
+interface WorkExperience {
+    imgsrc: string;
+    imgalt: string;
+    bgColor?: string;
+    btmTitle: string;
+    btmText?: string;
+    gradientIndex: 0 | 1 | 2;
+}
+
+interface ExperienceBannerProps {
+    id: string;
+    experiences: WorkExperience[];
+}
+
+export default function ExperienceBanner({ id, experiences }: ExperienceBannerProps) {
     const [activeIndex, setActiveIndex] = useState(0);
     const navItems = [
         "WSIB",
@@ -15,13 +29,13 @@ export default function ExperienceBanner({ id }: { id: string }) {
 
     return (
         <section id={id}>
-            <div className="w-full pt-5 pb-10 bg-black text-white ">
+            <div className={`w-full pt-5 pb-10 ${experiences[activeIndex].bgColor} ${activeIndex % 2 == 0? "text-white" : ""}`}>
                 <h1 className="text-2xl font-sharpsans text-center pt-3">
                     Work Experience
                 </h1>
                 <ScrollBannerNav
                     navItems={navItems}
-                    activeBorderColor="white"
+                    activeBorderColor={activeIndex % 2 == 0? "white" : "black"}
                     onNavClick={(index) => setActiveIndex(index)}
                 />
 
@@ -41,51 +55,26 @@ export default function ExperienceBanner({ id }: { id: string }) {
                                 : ""
                         }`}
                     >
-                        {/* First Set */}
+         
                         <div className="w-1/5">
-                            <ProjectTab
-                                bgColor=""
-                                btmTitle="Summer Student Intern"
-                                btmText="May 2025 - Aug 2025"
-                                gradientIndex={0}
-                            />
+                            <ProjectTab experience={experiences[activeIndex]} />
                         </div>
 
-                        {/* Second Set */}
+
 
                         <div className="w-1/5">
-                            <ProjectTab
-                                bgColor=""
-                                btmTitle="Summer Student Intern"
-                                btmText="May 2025 - Aug 2025"
-                                gradientIndex={0}
-                            />
+                            <ProjectTab experience={experiences[activeIndex]} />
                         </div>
 
-                        {/* Third Set */}
+
                         <div className="w-1/5">
-                            <ProjectTab
-                                bgColor=""
-                                btmTitle="Summer Student Intern"
-                                btmText="May 2025 - Aug 2025"
-                                gradientIndex={0}
-                            />
+                            <ProjectTab experience={experiences[activeIndex]} />
                         </div>
                         <div className="w-1/5">
-                            <ProjectTab
-                                bgColor=""
-                                btmTitle="Summer Student Intern"
-                                btmText="May 2025 - Aug 2025"
-                                gradientIndex={0}
-                            />
+                            <ProjectTab experience={experiences[activeIndex]} />
                         </div>
                         <div className="w-1/5">
-                            <ProjectTab
-                                bgColor=""
-                                btmTitle="Summer Student Intern"
-                                btmText="May 2025 - Aug 2025"
-                                gradientIndex={0}
-                            />
+                            <ProjectTab experience={experiences[activeIndex]} />
                         </div>
                     </div>
                 </div>

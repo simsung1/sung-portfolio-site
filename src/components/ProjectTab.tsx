@@ -1,13 +1,19 @@
 import Image from "next/image";
 
-interface ProjectTabProps {
-    bgColor: string;
+interface WorkExperience {
+    imgsrc: string;
+    imgalt: string;
+    bgColor?: string;
     btmTitle: string;
     btmText?: string
     gradientIndex: 0 | 1 | 2;
 }
 
-export default function ProjectTab({ bgColor, btmTitle, btmText, gradientIndex }: ProjectTabProps) {
+interface ProjectTabProps {
+    experience: WorkExperience;
+}
+
+export default function ProjectTab({ experience }: ProjectTabProps) {
     const gradientSelection: React.ReactNode[] = [
         <>
             <div
@@ -50,29 +56,29 @@ export default function ProjectTab({ bgColor, btmTitle, btmText, gradientIndex }
     return (
         <>
             <div
-                className={`w-full flex flex-col items-center justify-center ${bgColor}`}
+                className={`w-full flex flex-col items-center justify-center ${experience.bgColor}`}
             >
                 <div className="relative w-[90%] md:w-[70%] aspect-square md:aspect-[2/1] overflow-x-hidden">
                     <Image
-                        src="/images/wsib-edit.jpg"
-                        alt="Project Image"
+                        src={experience.imgsrc}
+                        alt={experience.imgalt}
                         fill
                         className="object-contain"
                     />
                     {/* Gradient Overlay, first one t-to-b, next one l-to-r */}
-                    {gradientSelection[gradientIndex]}
+                    {gradientSelection[experience.gradientIndex]}
                 </div>
                 <div className="font-sharpsans text-4xl text-center my-4">
-                    {btmTitle}
+                    {experience.btmTitle}
                 </div>
                 <div className="text-lg text-center mb-4">
-                    {btmText}
+                    {experience.btmText}
                 </div>
                 <a
                     href="https://www.fanshawec.ca/programs/cpa3-computer-programming-and-analysis-co-op/courses-next"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-fit rounded-full bg-[#F4F4F4] text-black px-4 py-2 inline-block"
+                    className="w-fit rounded-full bg-white text-black px-4 py-2 inline-block"
                 >
                     Learn More
                 </a>

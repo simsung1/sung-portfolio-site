@@ -17,7 +17,7 @@ export default function ProjectsBanner({ id }: { id: string }) {
                     Collection of Projects
                 </h1>
                 <ScrollBannerNav navItems={navItems} activeBorderColor="black"/>
-                <ProjectTab bgColor="" btmTitle="Test Text" gradientIndex={0}/>
+                {/* <ProjectTab bgColor="" btmTitle="Test Text" gradientIndex={0}/> */}
             </div>
         </section>
     );
