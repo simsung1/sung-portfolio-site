@@ -58,12 +58,12 @@ export default function ProjectTab({ experience }: ProjectTabProps) {
                         className="object-contain"
                     />
                     {/* Gradient Overlay, first one t-to-b, next one l-to-r */}
-                    {gradientSelection[experience.gradientIndex]}
+                    {experience.gradientIndex!= null && gradientSelection[experience.gradientIndex]}
                 </div>
-                <div className="font-sharpsans text-4xl text-center my-4">
+                <div className="font-sharpsans text-4xl text-center my-4 px-3">
                     {experience.btmTitle}
                 </div>
-                <div className="text-lg text-center mb-4">
+                <div className="text-lg text-center mb-4 px-3">
                     {experience.btmText}
                 </div>
                 <a

@@ -42,40 +42,41 @@ export default function ProjectsBanner({ id, experiences }: ProjectsBannerProps)
                         />
         
                         <div className="w-full overflow-x-hidden">
+                            {/* Modify width and translate-x styling below depending on number of banner elements */}
                             <div
-                                className={`flex transition-transform duration-500 w-[500%] ${
+                                className={`flex transition-transform duration-500 w-[600%] ${
                                     activeIndex === 0
                                         ? "translate-x-0"
                                         : activeIndex === 1
-                                        ? "-translate-x-1/5"
+                                        ? "-translate-x-1/6"
                                         : activeIndex === 2
-                                        ? "-translate-x-2/5"
+                                        ? "-translate-x-1/3"
                                         : activeIndex === 3
-                                        ? "-translate-x-3/5"
+                                        ? "-translate-x-1/2"
                                         : activeIndex === 4
-                                        ? "-translate-x-4/5"
+                                        ? "-translate-x-2/3"
+                                        : activeIndex === 5
+                                        ? "-translate-x-5/6"
                                         : ""
                                 }`}
                             >
                  
-                                <div className="w-1/5">
+                                <div className="w-1/6">
                                     <ProjectTab experience={experiences[activeIndex]} />
                                 </div>
-        
-        
-        
-                                <div className="w-1/5">
+                                <div className="w-1/6">
                                     <ProjectTab experience={experiences[activeIndex]} />
                                 </div>
-        
-        
-                                <div className="w-1/5">
+                                <div className="w-1/6">
                                     <ProjectTab experience={experiences[activeIndex]} />
                                 </div>
-                                <div className="w-1/5">
+                                <div className="w-1/6">
                                     <ProjectTab experience={experiences[activeIndex]} />
                                 </div>
-                                <div className="w-1/5">
+                                <div className="w-1/6">
+                                    <ProjectTab experience={experiences[activeIndex]} />
+                                </div>
+                                <div className="w-1/6">
                                     <ProjectTab experience={experiences[activeIndex]} />
                                 </div>
                             </div>

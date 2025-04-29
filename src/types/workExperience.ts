@@ -4,5 +4,5 @@ export interface WorkExperience {
     bgColor?: string;
     btmTitle: string;
     btmText?: string;
-    gradientIndex: 0 | 1 | 2;
+    gradientIndex: 0 | 1 | 2 | null;
   }

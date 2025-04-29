@@ -1,44 +1,57 @@
 import { WorkExperience } from "@/types/workExperience";
 
-export const projExperiences : WorkExperience[] = [
+export const projExperiences: WorkExperience[] = [
     {
-        imgsrc: "/images/wsib-exp.png",
-        imgalt: "Ghibli Image of Sung Coding Wearing WSIB Sweater",
-        bgColor: "bg-black",
-        btmTitle: "Summer Student Intern",
-        btmText: "May 2025 - Aug 2025, Remote",
-        gradientIndex: 0
+        imgsrc: "/images/lgscreenshot.png",
+        imgalt: "Screenshot of portfolio site in progress",
+        bgColor: "text-white text-shadow-lg",
+        btmTitle: "Portfolio Site",
+        btmText:
+            "Using NextJS, Tailwind CSS, and Vercel to host. \nRough Figma design for outline.",
+        gradientIndex: null,
     },
     {
-        imgsrc: "/images/fcv-exp.png",
-        imgalt: "Ghibli Image of Sung at FCV as Cashier",
-        bgColor: "bg-[#F4F4F4]",
-        btmTitle: "Sales Associate",
-        btmText: "June 2024 - Current, London",
-        gradientIndex: 2
+        imgsrc: "/images/blackjack-ip.png",
+        imgalt: "Screenshot of blackjack program in Eclipse IDE",
+        bgColor: "text-white text-shadow-lg",
+        btmTitle: "Console-run BlackJack",
+        btmText:
+            "Using Java and Eclipse IDE, creating a fully-functional game to be exported to .exe",
+        gradientIndex: null,
     },
     {
-        imgsrc: "/images/cdi-exp.png",
-        imgalt: "Ghibli Image of Sung Teaching English",
-        bgColor: "bg-black",
-        btmTitle: "Head English Instructor",
-        btmText: "Feb 2023 - Feb 2024, Korea",
-        gradientIndex: 0
+        imgsrc: "/images/database.png",
+        imgalt: "Screenshot of Database Creation",
+        bgColor: "text-white text-shadow-lg",
+        btmTitle: "DDL and DML Practice in SQL",
+        btmText:
+            "Expanding from the Case Study Data base used in class, additional practice of MySQL.",
+        gradientIndex: null,
     },
     {
-        imgsrc: "/images/rogers-exp.png",
-        imgalt: "Ghibli Image of Sung Working at Rogers",
-        bgColor: "bg-[#F4F4F4]",
-        btmTitle: "Sales Associate",
-        btmText: "Jan 2022 - Feb 2023, Toronto",
-        gradientIndex: 2
+        imgsrc: "/images/weblab3.png",
+        imgalt: "Screenshot of Web Design Lab 3",
+        bgColor: "text-white text-shadow-lg",
+        btmTitle: "Responsive Design Lab",
+        btmText:
+            "Using vanilla CSS, media queries and breakpoints were the focus of the lab to create 'mobile friendly' sites.",
+        gradientIndex: null,
     },
     {
-        imgsrc: "/images/library-exp.png",
-        imgalt: "Ghibli Image of Sung Working at Library",
-        bgColor: "bg-black",
-        btmTitle: "Student Librarian Assistant",
-        btmText: "Sept 2021 - Oct 2022, Toronto",
-        gradientIndex: 0
-    } 
-]
+        imgsrc: "/images/stockstats.png",
+        imgalt: "Screenshot of C++ Project 2",
+        bgColor: "text-white text-shadow-lg",
+        btmTitle: "C++ Program for Stock Statistics",
+        btmText:
+            "Major project, learned how to parse file data from cmd and do calculations on data.",
+        gradientIndex: null,
+    },
+    {
+        imgsrc: "/images/fractioncalc.png",
+        imgalt: "Screenshot of Fraction Calculator Project",
+        bgColor: "text-white text-shadow-lg",
+        btmTitle: "Fractions Calculator",
+        btmText: "Implemented helper classes from a UML design to build a GUI application using Swing.",
+        gradientIndex: null,
+    },
+];
