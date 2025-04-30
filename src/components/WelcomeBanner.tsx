@@ -58,7 +58,7 @@ export default function WelcomeBanner({ id }: { id: string }) {
 
                         <div className="w-1/3">
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 py-2">
-                                <div className="col-span-2 md:row-span-2">
+                                <div className="col-span-2 md:row-span-2 my-auto">
                                     <DualCard data={educationData[0]}/>
                                 </div>
                                 <div className="col-span-1">
@@ -79,7 +79,7 @@ export default function WelcomeBanner({ id }: { id: string }) {
                         {/* Third Set */}
                         <div className="w-1/3">
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 py-2">
-                                <div className="col-span-2 md:row-span-2">
+                                <div className="col-span-2 md:row-span-2 my-auto">
                                     <DualCard data={hobbyData[0]}/>
                                 </div>
                                 <div className="col-span-1">

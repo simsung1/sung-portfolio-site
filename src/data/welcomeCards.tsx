@@ -34,7 +34,7 @@ export const educationData: CardProps[] = [
         src: "/images/fanshawelogo.png",
         alt: "Fanshawe Logo",
         maintxt: "Computer Programming and Analysis - Fanshawe",
-        subtxt: "Second-year student on London campus, 4.2 cGPA honor roll.",
+        subtxt: "WSIB Scholar Award recipient (full scholarship), class rep.",
     },
     {
         src: "/images/brainstation.png",
@@ -52,9 +52,9 @@ export const educationData: CardProps[] = [
         maintxt: "Landed first internship via Launch Up, 2024",
     },
     {
-        src: "/images/ablucas.png",
-        alt: "A.B. Lucas Secondary School Logo",
-        maintxt: "Alumni of A.B. Lucas Secondary, June 2018",
+        src: "/images/convocation.png",
+        alt: "Convocation hat clip art",
+        maintxt: "Fanshawe Dean's Honor Roll, 4.2/4.2 cGPA",
     },
 ]
 

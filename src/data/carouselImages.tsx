@@ -20,7 +20,7 @@ export const images: CarouselImage[] = [
         alt: "Fanshawe College T building",
         styling: "object-cover brightness-50",
         divContent: (
-            <div className="text-white text-center z-1 absolute top-15 md:top-1/3 md:w-3/5 lg:w-1/2 md:left-15 flex flex-col items-center md:block md:text-left">
+            <div className="text-white text-center z-1 absolute top-15 px-10 sm:px-0 sm:top-1/3 sm:w-3/5 lg:w-1/2 sm:left-15 flex flex-col items-center sm:block sm:text-left">
                 <div className="font-sharpsans text-3xl ">
                     First Year of CPA3 Program{" "}
                     <span className="text-red-600">Completed</span>
@@ -70,7 +70,7 @@ export const images: CarouselImage[] = [
             "object-contain object-bottom px-10 pb-5 md:object-right pt-1/2 brightness-50",
         bgColor: "bg-[#3C3C3C]",
         divContent: (
-            <div className="text-white text-center z-1 absolute px-2 top-15 md:top-1/3 md:w-3/5 lg:w-1/2 md:left-15 md:text-left">
+            <div className="text-white text-center z-1 absolute px-2 top-15 sm:top-1/3 sm:w-3/5 lg:w-1/2 sm:left-15 sm:text-left">
                 <div className="font-sharpsans text-3xl ">
                     Portfolio Site Launched <br />
                     🎉
