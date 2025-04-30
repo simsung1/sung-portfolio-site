@@ -40,7 +40,7 @@ export default function ScrollBannerNav({
                                 ? activeBorderColor === "white"
                                     ? "border-white"
                                     : "border-black"
-                                : "border-transparent"
+                                : "border-transparent hover:text-gray-500"
                         }`}
                     >
                         {item}

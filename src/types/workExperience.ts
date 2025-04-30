@@ -5,4 +5,5 @@ export interface WorkExperience {
     btmTitle: string;
     btmText?: string;
     gradientIndex: 0 | 1 | 2 | null;
+    href: string;
   }

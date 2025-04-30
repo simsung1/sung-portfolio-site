@@ -103,7 +103,7 @@ export default function ContactBanner({ id }: { id: string }) {
                 </div>
                 <div className="w-1/2 aspect-square flex flex-col justify-center items-center">
                     <button
-                        className={`font-sharpsans text-lg p-2 font-bold my-4 ${
+                        className={`font-sharpsans text-lg p-2 font-bold my-4 cursor-pointer ${
                             activeButton === 0
                                 ? "border-b-2 transition-all duration-300"
                                 : "hover:text-2xl transition-all duration-300"
@@ -113,7 +113,7 @@ export default function ContactBanner({ id }: { id: string }) {
                         Work
                     </button>
                     <button
-                        className={`font-sharpsans text-lg p-2 font-bold my-4 ${
+                        className={`font-sharpsans text-lg p-2 font-bold my-4 cursor-pointer ${
                             activeButton === 1
                                 ? "border-b-2 transition-all duration-300"
                                 : "hover:text-2xl transition-all duration-300"
@@ -123,7 +123,7 @@ export default function ContactBanner({ id }: { id: string }) {
                         Personal
                     </button>
                     <button
-                        className={`font-sharpsans text-lg p-2 font-bold my-4 ${
+                        className={`font-sharpsans text-lg p-2 font-bold my-4 cursor-pointer ${
                             activeButton === 2
                                 ? "border-b-2 transition-all duration-300"
                                 : "hover:text-2xl transition-all duration-300"

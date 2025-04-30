@@ -7,7 +7,8 @@ export const workExperiences : WorkExperience[] = [
         bgColor: "bg-black",
         btmTitle: "Summer Student Intern",
         btmText: "May 2025 - Aug 2025, Remote",
-        gradientIndex: 0
+        gradientIndex: 0,
+        href: "/experience/wsib"
     },
     {
         imgsrc: "/images/fcv-exp.png",
@@ -15,7 +16,8 @@ export const workExperiences : WorkExperience[] = [
         bgColor: "bg-[#F4F4F4]",
         btmTitle: "Sales Associate",
         btmText: "June 2024 - Current, London",
-        gradientIndex: 2
+        gradientIndex: 2,
+        href: "/experience/wsib"
     },
     {
         imgsrc: "/images/cdi-exp.png",
@@ -23,7 +25,8 @@ export const workExperiences : WorkExperience[] = [
         bgColor: "bg-black",
         btmTitle: "Head English Instructor",
         btmText: "Feb 2023 - Feb 2024, Korea",
-        gradientIndex: 0
+        gradientIndex: 0,
+        href: "/experience/wsib"
     },
     {
         imgsrc: "/images/rogers-exp.png",
@@ -31,7 +34,8 @@ export const workExperiences : WorkExperience[] = [
         bgColor: "bg-[#F4F4F4]",
         btmTitle: "Sales Associate",
         btmText: "Jan 2022 - Feb 2023, Toronto",
-        gradientIndex: 2
+        gradientIndex: 2,
+        href: "/experience/wsib"
     },
     {
         imgsrc: "/images/library-exp.png",
@@ -39,6 +43,7 @@ export const workExperiences : WorkExperience[] = [
         bgColor: "bg-black",
         btmTitle: "Student Librarian Assistant",
         btmText: "Sept 2021 - Oct 2022, Toronto",
-        gradientIndex: 0
+        gradientIndex: 0,
+        href: "/experience/wsib"
     } 
 ]

@@ -67,10 +67,10 @@ export default function ProjectTab({ experience }: ProjectTabProps) {
                     {experience.btmText}
                 </div>
                 <a
-                    href="https://www.fanshawec.ca/programs/cpa3-computer-programming-and-analysis-co-op/courses-next"
+                    href={experience.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-fit rounded-full bg-white text-black px-4 py-2 inline-block"
+                    className="w-fit rounded-full bg-white text-black px-4 py-2 inline-block border border-white transition-all duration-200 hover:bg-black hover:text-white"
                 >
                     Learn More
                 </a>
