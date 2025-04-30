@@ -25,14 +25,81 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                         <XMarkIcon className="size-8 text-black cursor-pointer" />
                     </button>
                 </div>
-                <ul id="menu-list" className="flex flex-col items-start ml-7 gap-4 font-sharpsans font-bold text-2xl">
-                    <li><a href="#about" onClick={onClose}>About</a></li>
-                    <li><a href="#projects" onClick={onClose}>Projects</a></li>
-                    <li><a href="#experience" onClick={onClose}>Experience</a></li>
-                    <li><a href="#contact" onClick={onClose}>Contact</a></li>
-                    <li><a href="#" onClick={onClose}>Extras</a></li>
+                <ul
+                    id="menu-list"
+                    className="flex flex-col items-start ml-7 gap-4 font-sharpsans font-bold text-2xl"
+                >
+                    <li>
+                        <a
+                            href="#about"
+                            onClick={(e) => {
+                                onClose();
+                                e.preventDefault(); // 🔒 Prevents browser's scroll + focus
+                                document
+                                    .getElementById("about")
+                                    ?.scrollIntoView({
+                                        behavior: "smooth",
+                                    });
+                            }}
+                        >
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#experience"
+                            onClick={(e) => {
+                                onClose();
+                                e.preventDefault(); // 🔒 Prevents browser's scroll + focus
+                                document
+                                    .getElementById("experience")
+                                    ?.scrollIntoView({
+                                        behavior: "smooth",
+                                    });
+                            }}
+                        >
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#projects"
+                            onClick={(e) => {
+                                onClose();
+                                e.preventDefault(); // 🔒 Prevents browser's scroll + focus
+                                document
+                                    .getElementById("projects")
+                                    ?.scrollIntoView({
+                                        behavior: "smooth",
+                                    });
+                            }}
+                        >
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#contact"
+                            onClick={(e) => {
+                                onClose();
+                                e.preventDefault(); // 🔒 Prevents browser's scroll + focus
+                                document
+                                    .getElementById("contact")
+                                    ?.scrollIntoView({
+                                        behavior: "smooth",
+                                    });
+                            }}
+                        >
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onClick={onClose}>
+                            Extras
+                        </a>
+                    </li>
                 </ul>
-                <hr className="text-gray-200 w-9/10 mx-auto my-5"/>
+                <hr className="text-gray-200 w-9/10 mx-auto my-5" />
                 <a
                     href="/files/SMS Resume.pdf"
                     target="_blank"
@@ -40,17 +107,17 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                     download
                     title="Download my resume"
                     className="ml-7 underline decoration-dashed hover:text-green-200"
-                    >
-                        Download Resume
+                >
+                    Download Resume
                 </a>
                 <a
                     href="mailto:sim.sungmin@outlook.com"
                     title="Send me an email"
                     className="block ml-7 my-4 underline decoration-dashed hover:text-green-200"
-                    >
-                        Send me an email
+                >
+                    Send me an email
                 </a>
-                <hr className="text-gray-200 w-9/10 mx-auto my-5"/>
+                <hr className="text-gray-200 w-9/10 mx-auto my-5" />
             </div>
         </>
     );
