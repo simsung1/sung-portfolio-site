@@ -2,15 +2,7 @@
 import { useState } from "react";
 import ScrollBannerNav from "./ScrollBannerNav";
 import ProjectTab from "./ProjectTab";
-
-interface WorkExperience {
-    imgsrc: string;
-    imgalt: string;
-    bgColor?: string;
-    btmTitle: string;
-    btmText?: string;
-    gradientIndex: 0 | 1 | 2;
-}
+import { WorkExperience } from "@/types/workExperience";
 
 interface ExperienceBannerProps {
     id: string;
