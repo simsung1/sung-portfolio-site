@@ -37,67 +37,19 @@ export default function Nav() {
                     <div className="hidden lg:block">
                         <ul className="flex items-center ml-1 gap-4">
                             <li className="font-samsung font-bold">
-                                <a
-                                    href="#about"
-                                    onClick={(e) => {
-                                        e.preventDefault(); // 🔒 Prevents browser's scroll + focus
-                                        document
-                                            .getElementById("about")
-                                            ?.scrollIntoView({
-                                                behavior: "smooth",
-                                            });
-                                    }}
-                                >
-                                    About
-                                </a>
+                                <Link href="/#about">About</Link>
                             </li>
                             <li className="font-samsung font-bold">
-                                <a
-                                    href="#experience"
-                                    onClick={(e) => {
-                                        e.preventDefault(); 
-                                        document
-                                            .getElementById("experience")
-                                            ?.scrollIntoView({
-                                                behavior: "smooth",
-                                            });
-                                    }}
-                                >
-                                    Experience
-                                </a>
+                                <Link href="/#experience">Experience</Link>
                             </li>
                             <li className="font-samsung font-bold">
-                                <a
-                                    href="#projects"
-                                    onClick={(e) => {
-                                        e.preventDefault(); 
-                                        document
-                                            .getElementById("projects")
-                                            ?.scrollIntoView({
-                                                behavior: "smooth",
-                                            });
-                                    }}
-                                >
-                                    Projects
-                                </a>
+                                <Link href="/#projects">Projects</Link>
                             </li>
                             <li className="font-samsung font-bold">
-                                <a
-                                    href="#contact"
-                                    onClick={(e) => {
-                                        e.preventDefault(); 
-                                        document
-                                            .getElementById("contact")
-                                            ?.scrollIntoView({
-                                                behavior: "smooth",
-                                            });
-                                    }}
-                                >
-                                    Contact
-                                </a>
+                                <Link href="/#contact">Contact</Link>
                             </li>
                             <li className="font-samsung font-bold">
-                                <a href="#extras">Extras</a>
+                                <Link href="#extras">Extras</Link>
                             </li>
                         </ul>
                     </div>

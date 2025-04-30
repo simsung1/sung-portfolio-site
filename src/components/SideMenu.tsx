@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
 interface SideMenuProps {
@@ -30,73 +31,21 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                     className="flex flex-col items-start ml-7 gap-4 font-sharpsans font-bold text-2xl"
                 >
                     <li>
-                        <a
-                            href="#about"
-                            onClick={(e) => {
-                                onClose();
-                                e.preventDefault(); // 🔒 Prevents browser's scroll + focus
-                                document
-                                    .getElementById("about")
-                                    ?.scrollIntoView({
-                                        behavior: "smooth",
-                                    });
-                            }}
-                        >
-                            About
-                        </a>
+                        <Link href="/#about">About</Link>
                     </li>
                     <li>
-                        <a
-                            href="#experience"
-                            onClick={(e) => {
-                                onClose();
-                                e.preventDefault(); // 🔒 Prevents browser's scroll + focus
-                                document
-                                    .getElementById("experience")
-                                    ?.scrollIntoView({
-                                        behavior: "smooth",
-                                    });
-                            }}
-                        >
-                            Experience
-                        </a>
+                        <Link href="/#experience">Experience</Link>
                     </li>
                     <li>
-                        <a
-                            href="#projects"
-                            onClick={(e) => {
-                                onClose();
-                                e.preventDefault(); // 🔒 Prevents browser's scroll + focus
-                                document
-                                    .getElementById("projects")
-                                    ?.scrollIntoView({
-                                        behavior: "smooth",
-                                    });
-                            }}
-                        >
-                            Projects
-                        </a>
+                        <Link href="/#projects">Projects</Link>
                     </li>
                     <li>
-                        <a
-                            href="#contact"
-                            onClick={(e) => {
-                                onClose();
-                                e.preventDefault(); // 🔒 Prevents browser's scroll + focus
-                                document
-                                    .getElementById("contact")
-                                    ?.scrollIntoView({
-                                        behavior: "smooth",
-                                    });
-                            }}
-                        >
-                            Contact
-                        </a>
+                        <Link href="/#contact">Contact</Link>
                     </li>
                     <li>
-                        <a href="#" onClick={onClose}>
+                        <Link href="/#" onClick={onClose}>
                             Extras
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <hr className="text-gray-200 w-9/10 mx-auto my-5" />

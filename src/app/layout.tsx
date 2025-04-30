@@ -42,7 +42,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="">
+        <html lang="en">
             <body
                 className={`${samsungOne.variable} ${sharpSans.variable} font-samsung antialiased`}
             >
