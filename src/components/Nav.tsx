@@ -4,6 +4,7 @@ import Image from "next/image";
 import Icon from "@/assets/icons/hamburger.svg";
 import { useState } from "react";
 import SideMenu from "./SideMenu";
+import Link from "next/link";
 
 export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +15,8 @@ export default function Nav() {
                 id="nav-wrap"
                 className="flex justify-between px-4 lg:justify-start lg:px-7"
             >
-                <div
+                <Link
+                    href="/"
                     id="logo-wrap"
                     className="w-25 h-16 flex justify-center items-center lg:mr-8 relative"
                 >
@@ -25,7 +27,7 @@ export default function Nav() {
                         className="object-contain"
                         sizes="100px"
                     />
-                </div>
+                </Link>
                 <div id="menu-wrap" className="flex items-center">
                     <Image
                         src={Icon}
