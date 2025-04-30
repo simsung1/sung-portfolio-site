@@ -35,7 +35,7 @@ export default function ContactBanner({ id }: { id: string }) {
     };
     return (
         <div id={id} className="py-5 mb-2">
-            <h1 className="text-2xl font-sharpsans text-center py-3" tabIndex={-1}>
+            <h1 className="text-3xl font-sharpsans text-center py-3" tabIndex={-1}>
                 Get in Touch
             </h1>
             <div className="md:hidden">

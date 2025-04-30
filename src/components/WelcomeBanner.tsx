@@ -13,7 +13,7 @@ export default function WelcomeBanner({ id }: { id: string }) {
     return (
         <section id={id}>
             <div className="w-full mt-10 mb-4">
-                <h1 className="text-2xl font-sharpsans text-center pt-3">
+                <h1 className="text-3xl font-sharpsans text-center pt-3">
                     Hi, I&apos;m Sung Min
                 </h1>
                 <ScrollBannerNav

@@ -23,7 +23,7 @@ export default function ProjectsBanner({ id, experiences }: ProjectsBannerProps)
     return (
         <section id={id}>
                     <div className="w-full pt-5 pb-10 bg-[url(/images/cubecorner.jpg)] bg-cover">
-                        <h1 className="text-2xl font-sharpsans text-center pt-3">
+                        <h1 className="text-3xl font-sharpsans text-center pt-3">
                             Collection of Projects
                         </h1>
                         <ScrollBannerNav
