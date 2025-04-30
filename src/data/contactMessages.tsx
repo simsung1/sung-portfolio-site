@@ -41,7 +41,7 @@ export const messages: InfoCardProps[] = [
     {
         title: "Visitors from Across the Globe",
         message:
-            "Nice to meet you! I hope you found some inspiration for your own portfolio site or just enjoyed browsing through. I found my inspiration on Reddit when I saw someone's portfolio site designed like Netflix's site. If you want to reach out to say hello, please feel free to do so!",
+            "Nice to meet you! I hope you found some inspiration for your own portfolio site or just enjoyed browsing through. I found my inspiration on Reddit when I saw someone's portfolio site designed like Netflix's site. Since my name (Sim, Sung) is close to Samsung, I decided to copy Samsung Canada's site. If you want to reach out to say hello, please feel free to do so!",
         link: "mailto:funnito@gmail.com",
         bgColor: "bg-orange-100",
         icon: <MdEmail size={25} />,
