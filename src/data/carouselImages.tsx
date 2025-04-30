@@ -76,6 +76,8 @@ export const images: CarouselImage[] = [
                     🎉
                 </div>
                 <div className="text-xl mt-2 px-2 md:px-0">
+                    Inspired by Samsung Canada's Site.
+                    <br/>
                     Here&apos;s to more successful prjects in the future 🥂
                 </div>
             </div>
