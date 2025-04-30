@@ -7,6 +7,5 @@ Enjoy looking around and I look forward to hearing from you!
 
 To do:
 - extras section
-- extra page that links to welcome banner
-- link scroll banner nav to new components when different banner selected
-- upload more pictures and content to populate about, projects, experience 
+- pages and routing for projects section
+- make welcome section cards clickable
