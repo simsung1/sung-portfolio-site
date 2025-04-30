@@ -106,7 +106,7 @@ export default function ContactBanner({ id }: { id: string }) {
                         className={`font-sharpsans text-lg p-2 font-bold my-4 ${
                             activeButton === 0
                                 ? "border-b-2 transition-all duration-300"
-                                : ""
+                                : "hover:text-2xl transition-all duration-300"
                         }`}
                         onClick={() => goToSlide(0)}
                     >
@@ -116,7 +116,7 @@ export default function ContactBanner({ id }: { id: string }) {
                         className={`font-sharpsans text-lg p-2 font-bold my-4 ${
                             activeButton === 1
                                 ? "border-b-2 transition-all duration-300"
-                                : ""
+                                : "hover:text-2xl transition-all duration-300"
                         }`}
                         onClick={() => goToSlide(1)}
                     >
@@ -126,7 +126,7 @@ export default function ContactBanner({ id }: { id: string }) {
                         className={`font-sharpsans text-lg p-2 font-bold my-4 ${
                             activeButton === 2
                                 ? "border-b-2 transition-all duration-300"
-                                : ""
+                                : "hover:text-2xl transition-all duration-300"
                         }`}
                         onClick={() => goToSlide(2)}
                     >
