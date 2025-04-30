@@ -21,15 +21,6 @@ export default function ProjectsBanner({ id, experiences }: ProjectsBannerProps)
     ];
 
     return (
-        // <section id={id}>
-        //     <div className="w-full bg-white pt-5 pb-10 bg-[url(/images/cubecorner.jpg)] bg-cover">
-        //         <h1 className="text-2xl font-sharpsans text-center pt-3">
-        //             Collection of Projects
-        //         </h1>
-        //         <ScrollBannerNav navItems={navItems} activeBorderColor="black"/>
-        //         <ProjectTab bgColor="" btmTitle="Test Text" gradientIndex={0}/>
-        //     </div>
-        // </section>
         <section id={id}>
                     <div className="w-full pt-5 pb-10 bg-[url(/images/cubecorner.jpg)] bg-cover">
                         <h1 className="text-2xl font-sharpsans text-center pt-3">
@@ -41,7 +32,7 @@ export default function ProjectsBanner({ id, experiences }: ProjectsBannerProps)
                             onNavClick={(index) => setActiveIndex(index)}
                         />
         
-                        <div className="w-full overflow-x-hidden">
+                        <div className="w-full overflow-x-hidden mt-4">
                             {/* Modify width and translate-x styling below depending on number of banner elements */}
                             <div
                                 className={`flex transition-transform duration-500 w-[600%] ${
@@ -62,22 +53,22 @@ export default function ProjectsBanner({ id, experiences }: ProjectsBannerProps)
                             >
                  
                                 <div className="w-1/6">
-                                    <ProjectTab experience={experiences[activeIndex]} />
+                                    <ProjectTab experience={experiences[0]} />
                                 </div>
                                 <div className="w-1/6">
-                                    <ProjectTab experience={experiences[activeIndex]} />
+                                    <ProjectTab experience={experiences[1]} />
                                 </div>
                                 <div className="w-1/6">
-                                    <ProjectTab experience={experiences[activeIndex]} />
+                                    <ProjectTab experience={experiences[2]} />
                                 </div>
                                 <div className="w-1/6">
-                                    <ProjectTab experience={experiences[activeIndex]} />
+                                    <ProjectTab experience={experiences[3]} />
                                 </div>
                                 <div className="w-1/6">
-                                    <ProjectTab experience={experiences[activeIndex]} />
+                                    <ProjectTab experience={experiences[4]} />
                                 </div>
                                 <div className="w-1/6">
-                                    <ProjectTab experience={experiences[activeIndex]} />
+                                    <ProjectTab experience={experiences[5]} />
                                 </div>
                             </div>
                         </div>

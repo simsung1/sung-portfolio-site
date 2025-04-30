@@ -3,10 +3,12 @@ import { useState } from "react";
 import ScrollBannerNav from "./ScrollBannerNav";
 import DualCard from "./DualCard";
 import SoloCard from "./SoloCard";
+import { overviewData, educationData, hobbyData } from "@/data/welcomeCards";
 
 export default function WelcomeBanner({ id }: { id: string }) {
     const [activeIndex, setActiveIndex] = useState(0);
     const navItems = ["Overview", "Education", "Hobbies"];
+
 
     return (
         <section id={id}>
@@ -35,19 +37,19 @@ export default function WelcomeBanner({ id }: { id: string }) {
                         <div className="w-1/3">
                             <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 px-4 py-2">
                                 <div className="col-span-2 md:row-span-2">
-                                    <DualCard />
+                                    <DualCard  data={overviewData[0]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={overviewData[1]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={overviewData[2]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={overviewData[3]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={overviewData[4]}/>
                                 </div>
                             </div>
                         </div>
@@ -57,19 +59,19 @@ export default function WelcomeBanner({ id }: { id: string }) {
                         <div className="w-1/3">
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 py-2">
                                 <div className="col-span-2 md:row-span-2">
-                                    <DualCard />
+                                    <DualCard data={educationData[0]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={educationData[1]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={educationData[2]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={educationData[3]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={educationData[4]}/>
                                 </div>
                             </div>
                         </div>
@@ -78,19 +80,19 @@ export default function WelcomeBanner({ id }: { id: string }) {
                         <div className="w-1/3">
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 py-2">
                                 <div className="col-span-2 md:row-span-2">
-                                    <DualCard />
+                                    <DualCard data={hobbyData[0]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={hobbyData[1]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={hobbyData[2]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={hobbyData[3]}/>
                                 </div>
                                 <div className="col-span-1">
-                                    <SoloCard />
+                                    <SoloCard data={hobbyData[4]}/>
                                 </div>
                             </div>
                         </div>

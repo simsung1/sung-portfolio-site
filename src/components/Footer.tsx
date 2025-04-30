@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 export default function Footer() {
     return (
         <div className="p-4 ">
-            <h4 className="text-sm my-3">&copy;Copyright 2025 Sung Min Sim</h4>
+            <h4 className="text-sm my-3">&copy;Copyright 2025 Sung Min Sim. <br/>Select visuals are externally sourced and used for non-commercial portfolio display.</h4>
             <div className="md:flex md:justify-between md:items-center">
                 <h4 className="font-bold text-sm">
                     Spoken Languages: <span className="block md:hidden"></span>
