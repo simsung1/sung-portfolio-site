@@ -1,14 +1,5 @@
 import React from "react";
-
-interface InfoCardProps {
-    title: string;
-    message: string;
-    link: string;
-    image?: React.ReactNode;
-    icon?: React.ReactNode;
-    bgColor?: string;
-    linkTitle?: string;
-}
+import { InfoCardProps } from "@/types/contactType";
 
 const InfoCard: React.FC<InfoCardProps> = ({
     title,

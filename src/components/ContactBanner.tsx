@@ -1,11 +1,8 @@
 "use client";
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
-import { HiDocumentDownload } from "react-icons/hi";
-import { MdEmail } from "react-icons/md";
-import { RiInstagramFill } from "react-icons/ri";
 import InfoCard from "./InfoCard";
-import Image from "next/image";
+import { messages } from "@/data/contactMessages";
 
 export default function ContactBanner({ id }: { id: string }) {
     const sliderRef = useRef<Slider | null>(null);
@@ -15,6 +12,7 @@ export default function ContactBanner({ id }: { id: string }) {
         sliderRef.current?.slickGoTo(index);
     };
 
+    // settings for mobile view
     const settings = {
         arrows: false,
         className: "center",
@@ -25,6 +23,7 @@ export default function ContactBanner({ id }: { id: string }) {
         dots: true,
     };
 
+    //settings for tablet view+
     const settings2 = {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -43,52 +42,28 @@ export default function ContactBanner({ id }: { id: string }) {
                 <div className="slider-container w-[90%] aspect-square mx-auto mt-5">
                     <Slider {...settings}>
                         <InfoCard
-                            title="Hiring Managers and Recruiters"
-                            message="Thank you for taking the time to navigate my
-                                    portfolio! I'm an aspiring Full-Stack
-                                    Developer with a string interest in Mobile
-                                    app development as well. I try to make the
-                                    software that I create as intuitive as
-                                    possible.
-                                    I hope you will consider my
-                                    application to join your team, or if
-                                    you're a recruiter, I'd love to
-                                    hear from you as well! Always open to
-                                    discussing projects, internships, or
-                                    full-time roles."
-                            link="/files/SMS Resume.pdf"
-                            bgColor="bg-[#F4F4F4]"
-                            icon={<HiDocumentDownload size={25} />}
-                            linkTitle="Download My Resume"
+                            title={messages[0].title}
+                            message={messages[0].message}
+                            link={messages[0].link}
+                            bgColor={messages[0].bgColor}
+                            icon={messages[0].icon}
+                            linkTitle={messages[0].linkTitle}
                         />
                         <InfoCard
-                            title="Friends, Classmates, Family"
-                            message="I finally completed my portfolio site! I
-                                    know I said I was working on it for a while,
-                                    so now it's nice to finally have it
-                                    complete. If you want help making your own
-                                    personal site, send me a message and
-                                    I'd love to discuss it with you.
-                                    I'll consider a friends-and-family
-                                    discount 😉"
-                            link="https://www.instagram.com/sim.sung/"
-                            icon={<RiInstagramFill size={25} />}
-                            linkTitle="Message me on Instagran"
+                            title={messages[1].title}
+                            message={messages[1].message}
+                            link={messages[1].link}
+                            bgColor={messages[1].bgColor}
+                            icon={messages[1].icon}
+                            linkTitle={messages[1].linkTitle}
                         />
                         <InfoCard
-                            title="Visitors from Across the Globe"
-                            message="Nice to meet you! I hope you found some
-                                    inspiration for your own portfolio site or
-                                    just enjoyed browsing through. I found my
-                                    inspiration on Reddit when I saw
-                                    someone's portfolio site designed like
-                                    Netflix's site.
-                                    If you want to reach out to say hello,
-                                    please feel free to do so!"
-                            link="mailto:funnito@gmail.com"
-                            bgColor="bg-orange-100"
-                            icon={<MdEmail size={25} />}
-                            linkTitle="Send me a personal email"
+                            title={messages[2].title}
+                            message={messages[2].message}
+                            link={messages[2].link}
+                            bgColor={messages[2].bgColor}
+                            icon={messages[2].icon}
+                            linkTitle={messages[2].linkTitle}
                         />
                     </Slider>
                 </div>
@@ -97,76 +72,32 @@ export default function ContactBanner({ id }: { id: string }) {
                 <div className="slider-container w-1/2 aspect-square mt-5">
                     <Slider ref={sliderRef} {...settings2}>
                         <InfoCard
-                            title="Hiring Managers and Recruiters"
-                            message="Thank you for taking the time to navigate my
-                                    portfolio! I'm an aspiring Full-Stack
-                                    Developer with a string interest in Mobile
-                                    app development as well. I try to make the
-                                    software that I create as intuitive as
-                                    possible.
-                                    I hope you will consider my
-                                    application to join your team, or if
-                                    you're a recruiter, I'd love to
-                                    hear from you as well! Always open to
-                                    discussing projects, internships, or
-                                    full-time roles."
-                            link="/files/SMS Resume.pdf"
-                            bgColor="bg-[#F4F4F4]"
-                            image={
-                                <Image
-                                    src="/images/skills.png"
-                                    alt="Tech Stack Skills"
-                                    fill
-                                    className={`object-contain`}
-                                />
-                            }
-                            icon={<HiDocumentDownload size={25} />}
-                            linkTitle="Download My Resume"
+                            title={messages[0].title}
+                            message={messages[0].message}
+                            link={messages[0].link}
+                            bgColor={messages[0].bgColor}
+                            icon={messages[0].icon}
+                            linkTitle={messages[0].linkTitle}
+                            image={messages[0].image}
+
                         />
                         <InfoCard
-                            title="Friends, Classmates, Family"
-                            message="I finally completed my portfolio site! I
-                                    know I said I was working on it for a while,
-                                    so now it's nice to finally have it
-                                    complete. If you want help making your own
-                                    personal site, send me a message and
-                                    I'd love to discuss it with you.
-                                    I'll consider a friends-and-family
-                                    discount 😉"
-                            link="https://www.instagram.com/sim.sung/"
-                            image={
-                                <Image
-                                    src="/images/friends.jpg"
-                                    alt="Friends around a piano"
-                                    fill
-                                    className={`object-cover`}
-                                />
-                            }
-                            icon={<RiInstagramFill size={25} />}
-                            linkTitle="Message me on Instagran"
+                            title={messages[1].title}
+                            message={messages[1].message}
+                            link={messages[1].link}
+                            bgColor={messages[1].bgColor}
+                            icon={messages[1].icon}
+                            linkTitle={messages[1].linkTitle}
+                            image={messages[1].image}
                         />
                         <InfoCard
-                            title="Visitors from Across the Globe"
-                            message="Nice to meet you! I hope you found some
-                                    inspiration for your own portfolio site or
-                                    just enjoyed browsing through. I found my
-                                    inspiration on Reddit when I saw
-                                    someone's portfolio site designed like
-                                    Netflix's site.
-                                    If you want to reach out to say hello,
-                                    please feel free to do so!"
-                            link="mailto:funnito@gmail.com"
-                            bgColor="bg-orange-100"
-                            image={
-                                <Image
-                                    src="/images/globe.png"
-                                    alt="Earth Clipart"
-                                    fill
-                                    className={`object-contain`}
-                                />
-                            }
-                            icon={<MdEmail size={25} />}
-                            linkTitle="Send me a personal email"
+                            title={messages[2].title}
+                            message={messages[2].message}
+                            link={messages[2].link}
+                            bgColor={messages[2].bgColor}
+                            icon={messages[2].icon}
+                            linkTitle={messages[2].linkTitle}
+                            image={messages[2].image}
                         />
                     </Slider>
                 </div>
