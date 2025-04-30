@@ -7,7 +7,7 @@ export default function Footer() {
             <h4 className="text-sm my-3">&copy;Copyright 2025 Sung Min Sim. <br/>Select visuals are externally sourced and used for non-commercial portfolio display.</h4>
             <div className="md:flex md:justify-between md:items-center">
                 <h4 className="font-bold text-sm">
-                    Spoken Languages: <span className="block md:hidden"></span>
+                    Fluent Languages: <span className="block md:hidden"></span>
                     Canada/English(EN), Korean(KR)
                 </h4>
                 <div className="flex flex-col my-5 justify-center items-center gap-7 md:gap-3 md:flex-row">

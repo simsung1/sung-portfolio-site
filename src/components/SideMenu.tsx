@@ -25,13 +25,31 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                         <XMarkIcon className="size-8 text-black cursor-pointer" />
                     </button>
                 </div>
-                <ul id="menu-list" className="flex flex-col items-start ml-7 gap-4">
-                    <li className="font-sharpsans font-bold text-2xl"><a href="#about" onClick={onClose}>About</a></li>
-                    <li className="font-sharpsans font-bold text-2xl"><a href="#projects" onClick={onClose}>Projects</a></li>
-                    <li className="font-sharpsans font-bold text-2xl"><a href="#experience" onClick={onClose}>Experience</a></li>
-                    <li className="font-sharpsans font-bold text-2xl"><a href="#contact" onClick={onClose}>Contact</a></li>
-                    <li className="font-sharpsans font-bold text-2xl"><a href="#" onClick={onClose}>Extras</a></li>
+                <ul id="menu-list" className="flex flex-col items-start ml-7 gap-4 font-sharpsans font-bold text-2xl">
+                    <li><a href="#about" onClick={onClose}>About</a></li>
+                    <li><a href="#projects" onClick={onClose}>Projects</a></li>
+                    <li><a href="#experience" onClick={onClose}>Experience</a></li>
+                    <li><a href="#contact" onClick={onClose}>Contact</a></li>
+                    <li><a href="#" onClick={onClose}>Extras</a></li>
                 </ul>
+                <hr className="text-gray-200 w-9/10 mx-auto my-5"/>
+                <a
+                    href="/files/SMS Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
+                    title="Download my resume"
+                    className="ml-7 underline decoration-dashed hover:text-green-200"
+                    >
+                        Download Resume
+                </a>
+                <a
+                    href="mailto:sim.sungmin@outlook.com"
+                    title="Send me an email"
+                    className="block ml-7 my-4 underline decoration-dashed hover:text-green-200"
+                    >
+                        Send me an email
+                </a>
                 <hr className="text-gray-200 w-9/10 mx-auto my-5"/>
             </div>
         </>
