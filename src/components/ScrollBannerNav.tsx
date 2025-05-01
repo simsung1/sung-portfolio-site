@@ -35,6 +35,7 @@ export default function ScrollBannerNav({
                             buttonRefs.current[index] = el;
                         }}
                         onClick={() => handleClick(index)}
+                        tabIndex={-1}
                         className={`font-bold flex-shrink-0 py-1 my-2 border-b-2 transition-all duration-600 cursor-pointer ${
                             activeIndex === index
                                 ? activeBorderColor === "white"
