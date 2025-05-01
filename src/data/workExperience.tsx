@@ -17,7 +17,7 @@ export const workExperiences : WorkExperience[] = [
         btmTitle: "Sales Associate",
         btmText: "June 2024 - Current, London",
         gradientIndex: 2,
-        href: "/experience/wsib"
+        href: "/experience/fcv"
     },
     {
         imgsrc: "/images/cdi-exp.png",
@@ -26,7 +26,7 @@ export const workExperiences : WorkExperience[] = [
         btmTitle: "Head English Instructor",
         btmText: "Feb 2023 - Feb 2024, Korea",
         gradientIndex: 0,
-        href: "/experience/wsib"
+        href: "/experience/cdi"
     },
     {
         imgsrc: "/images/rogers-exp.png",
@@ -35,7 +35,7 @@ export const workExperiences : WorkExperience[] = [
         btmTitle: "Sales Associate",
         btmText: "Jan 2022 - Feb 2023, Toronto",
         gradientIndex: 2,
-        href: "/experience/wsib"
+        href: "/experience/rogers"
     },
     {
         imgsrc: "/images/library-exp.png",
@@ -44,6 +44,6 @@ export const workExperiences : WorkExperience[] = [
         btmTitle: "Student Librarian Assistant",
         btmText: "Sept 2021 - Oct 2022, Toronto",
         gradientIndex: 0,
-        href: "/experience/wsib"
+        href: "/experience/uoft"
     } 
 ]

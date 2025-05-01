@@ -12,7 +12,7 @@ export default function WSIBPage() {
             ]}
             links={[
                 {
-                    label: "Visit Home Page",
+                    label: "Learn More about WSIB",
                     text: "About Us",
                     href: "https://www.wsib.ca/en/about-us",
                 },
