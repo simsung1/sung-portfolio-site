@@ -45,9 +45,9 @@ export const projExperiences: WorkExperience[] = [
         imgsrc: "/images/stockstats.png",
         imgalt: "Screenshot of C++ Project 2",
         bgColor: "text-white text-shadow-lg",
-        btmTitle: "C++ Program for Stock Statistics",
+        btmTitle: "C++ 20 Program for Stock Statistics",
         btmText:
-            "Major project, learned how to parse file data from cmd and do calculations on data.",
+            "Learned how to parse file data, read cmd line args, and do calculations on csv data.",
         gradientIndex: null,
         href: "/projects/portfolio"
     },

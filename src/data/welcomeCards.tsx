@@ -10,7 +10,7 @@ export const overviewData: CardProps[] = [
     {
         src: "/images/korcad.png",
         alt: "Korean and Canadian Flags",
-        maintxt: "Moved to Canada two decades ago",
+        maintxt: "Moved to Canada ~two decades ago",
     },
     {
         src: "/images/londonlogo.png",

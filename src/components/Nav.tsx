@@ -11,7 +11,7 @@ export default function Nav() {
 
     return (
         <>
-            <div className="flex justify-between px-4 lg:justify-start lg:px-7 border-b border-gray-300">
+            <div className="flex justify-between px-4 lg:justify-start lg:px-7 border-b border-gray-300 bg-white">
                 <Link
                     href="/"
                     id="logo-wrap"
