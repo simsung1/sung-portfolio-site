@@ -4,10 +4,8 @@ export default function InProgressPage() {
     return (
         <ProjectLayout
             images={[
-                "/images/portfolio-1.png",
-                "/images/portfolio-2.png",
-                "/images/portfolio-3.png",
-                "/images/portfolio-4.png",
+                "/images/progress-1.png",
+                "/images/progress-2.png",
             ]}
             title="Console-run BlackJack (Game of 21)"
             description="Building on top of a school project, I am in the progress of adding 

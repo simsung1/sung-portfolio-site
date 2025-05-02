@@ -4,8 +4,10 @@ export default function HighlightPage() {
     return (
         <ProjectLayout
             images={[
-                "/images/progress-1.png",
-                "/images/progress-2.png",
+                "/images/portfolio-1.png",
+                "/images/portfolio-2.png",
+                "/images/portfolio-3.png",
+                "/images/portfolio-4.png",
             ]}
             title="Portfolio Site"
             description="Using Next.js, Tailwind CSS, and Vercel, I created a
