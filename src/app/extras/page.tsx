@@ -13,8 +13,8 @@ export default function ExtrasPage() {
                         embrace SQL and database courses
                     </li>
                     <li>
-                        Professor Madhavi Mohan, for being understanding and
-                        considerate of personal circumstances
+                        Professor Madhavi Mohan, for being caring and 
+                        compassionate towards students
                     </li>
                     <li>
                         Professor Bernard Ugalde, for focusing on the details of

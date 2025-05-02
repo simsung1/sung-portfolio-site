@@ -25,7 +25,7 @@ export const messages: InfoCardProps[] = [
     {
         title: "Friends, Classmates, Family",
         message:
-            "I finally completed my portfolio site! I know I said I was working on it for a while,so now it's nice to finally have it complete. If you want help making your own personal site, send me a message and I'd love to discuss it with you. I'll consider a friends-and-family discount 😉",
+            "I finally completed my portfolio site! I know I said I was working on it for a while, so it's nice to finally have it complete. If you want help making your own personal site, send me a message and I'd love to discuss it with you. I'll consider a friends-and-family discount 😉",
         link: "https://www.instagram.com/sim.sung/",
         icon: <RiInstagramFill size={25} />,
         linkTitle: "Message me on Instagran",
