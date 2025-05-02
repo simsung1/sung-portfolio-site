@@ -11,6 +11,7 @@ export default function ExtrasPage() {
                     <li>Professor Luigi Sorbara, for inspiring many students to embrace SQL and database courses</li>
                     <li>Professor Madhavi Mohan, for being understanding and considerate of personal circumstances</li>
                     <li>Professor Bernard Ugalde, for focusing on the details of student engagement and learning</li>
+                    <li>Professor Alex Cooper and Professor Garth Santos for providing the educational assignments to improve our skills</li>
                     <li>Manager Austin Gero, for providing the chance to work at FCV and being supportive along the way</li>
                     <li>My parents, my closest friend MBZ, and my classmates who make lessons enjoyable</li>
                 </ul>
