@@ -1,5 +1,10 @@
 import ProjectLayout from "@/components/ProjectLayout";
 
+export const metadata = {
+    title: "Portfolio Site",
+    description: "Information about my portfolio site.",
+};
+
 export default function HighlightPage() {
     return (
         <ProjectLayout

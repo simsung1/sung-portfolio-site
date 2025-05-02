@@ -1,5 +1,10 @@
 import ProjectLayout from "@/components/ProjectLayout";
 
+export const metadata = {
+    title: "Web Design Course",
+    description: "Collection of labs from web design.",
+};
+
 export default function WebDesignPage() {
     return (
         <ProjectLayout

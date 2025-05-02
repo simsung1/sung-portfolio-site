@@ -1,5 +1,10 @@
 import ProjectLayout from "@/components/ProjectLayout";
 
+export const metadata = {
+    title: "Introductory C++ Course",
+    description: "Details about a project assigned in a previous C++ course.",
+};
+
 export default function CPPPage() {
     return (
         <ProjectLayout

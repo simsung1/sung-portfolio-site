@@ -1,5 +1,10 @@
 import ProjectLayout from "@/components/ProjectLayout";
 
+export const metadata = {
+    title: "OOP with Java",
+    description: "Description of the Fractions calculator project.",
+};
+
 export default function JavaPage() {
     return (
         <ProjectLayout

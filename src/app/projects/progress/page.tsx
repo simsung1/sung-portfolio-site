@@ -1,5 +1,10 @@
 import ProjectLayout from "@/components/ProjectLayout";
 
+export const metadata = {
+    title: "Current Project In Progress",
+    description: "Details about the project I'm currently working on.",
+};
+
 export default function InProgressPage() {
     return (
         <ProjectLayout
