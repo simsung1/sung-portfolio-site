@@ -19,7 +19,7 @@ export const projExperiences: WorkExperience[] = [
         btmText:
             "Using Java and Eclipse IDE, creating a fully-functional game to be exported to .exe",
         gradientIndex: null,
-        href: "/projects/in-progress"
+        href: "/projects/progress"
     },
     {
         imgsrc: "/images/database.png",
