@@ -9,7 +9,7 @@ export const projExperiences: WorkExperience[] = [
         btmText:
             "Using NextJS, Tailwind CSS, and Vercel to host. \nRough Figma design for outline.",
         gradientIndex: null,
-        href: "/projects/portfolio"
+        href: "/projects/highlight"
     },
     {
         imgsrc: "/images/blackjack-ip.png",
@@ -19,7 +19,7 @@ export const projExperiences: WorkExperience[] = [
         btmText:
             "Using Java and Eclipse IDE, creating a fully-functional game to be exported to .exe",
         gradientIndex: null,
-        href: "/projects/portfolio"
+        href: "/projects/in-progress"
     },
     {
         imgsrc: "/images/database.png",
@@ -29,7 +29,7 @@ export const projExperiences: WorkExperience[] = [
         btmText:
             "Expanding from the Case Study Data base used in class, additional practice of MySQL.",
         gradientIndex: null,
-        href: "/projects/portfolio"
+        href: "/projects/personal"
     },
     {
         imgsrc: "/images/weblab3.png",
@@ -39,7 +39,7 @@ export const projExperiences: WorkExperience[] = [
         btmText:
             "Using vanilla CSS, media queries and breakpoints were the focus of the lab to create 'mobile friendly' sites.",
         gradientIndex: null,
-        href: "/projects/portfolio"
+        href: "/projects/info1217"
     },
     {
         imgsrc: "/images/stockstats.png",
@@ -49,7 +49,7 @@ export const projExperiences: WorkExperience[] = [
         btmText:
             "Learned how to parse file data, read cmd line args, and do calculations on csv data.",
         gradientIndex: null,
-        href: "/projects/portfolio"
+        href: "/projects/info1157"
     },
     {
         imgsrc: "/images/fractioncalc.png",
@@ -58,6 +58,6 @@ export const projExperiences: WorkExperience[] = [
         btmTitle: "Fractions Calculator",
         btmText: "Implemented helper classes from a UML design to build a GUI application using Swing.",
         gradientIndex: null,
-        href: "/projects/portfolio"
+        href: "/projects/info3134"
     },
 ];

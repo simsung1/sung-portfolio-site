@@ -9,3 +9,4 @@ To do:
 - extras section
 - pages and routing for projects section
 - make welcome section cards clickable
+- optimize images and public build

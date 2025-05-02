@@ -37,7 +37,7 @@ export default function WelcomeBanner({ id }: { id: string }) {
                         <div className="w-1/3">
                             <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 px-4 py-2">
                                 <div className="col-span-2 md:row-span-2 my-auto">
-                                    <DualCard  data={overviewData[0]}/>
+                                    <DualCard data={overviewData[0]}/>
                                 </div>
                                 <div className="col-span-1">
                                     <SoloCard data={overviewData[1]}/>

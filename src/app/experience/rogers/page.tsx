@@ -22,7 +22,13 @@ export default function RogersPage() {
                     href: "https://jobs.rogers.com/job/Toronto-Sales-Associate-ON/1279599600/",
                 },
             ]}
-            extras={<div>Test</div>}
+            extras={
+                <div>
+                    Received an internal shout-out email from the CEO along with
+                    my colleague about a positive experience we provided to a
+                    VIP customer.
+                </div>
+            }
         />
     );
 }

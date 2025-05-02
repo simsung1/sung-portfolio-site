@@ -22,7 +22,13 @@ export default function FCVPage() {
                     href: "#",
                 },
             ]}
-            extras={<div>Test</div>}
+            extras={
+                <div>
+                    One year with Forest City Vape! I continue to stay
+                    up-to-date on product knowledge to deliver the best
+                    experience to customers.
+                </div>
+            }
         />
     );
 }

@@ -23,7 +23,7 @@ export default function CDIPage() {
                     href: "https://teachinkorea.creverse.com/careers/GeneralJobBoardList",
                 },
             ]}
-            extras={<div>Test</div>}
+            extras={<div>Promoted to lead instructor in only six months, and learned to prepare lesson materials for youth aged 5-17.</div>}
         />
     );
 }

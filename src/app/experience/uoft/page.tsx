@@ -22,7 +22,13 @@ export default function UofTPage() {
                     href: "https://onesearch.library.utoronto.ca/student-jobs",
                 },
             ]}
-            extras={<div>Test</div>}
+            extras={
+                <div>
+                    My supervisor at the time was also previously employed in
+                    software development and introduced me to programming
+                    languages that I should get familiar with.
+                </div>
+            }
         />
     );
 }
