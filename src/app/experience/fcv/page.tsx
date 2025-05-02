@@ -31,7 +31,7 @@ export default function FCVPage() {
                 <div>
                     One year with Forest City Vape! I continue to stay
                     up-to-date on product knowledge to deliver the best
-                    experience to customers.
+                    experience for customers.
                 </div>
             }
         />
