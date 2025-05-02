@@ -22,8 +22,8 @@ export default function HighlightPage() {
             techStack={["Next.js", "Tailwind CSS", "Vercel"]}
             githubUrl="https://github.com/simsung1/sung-portfolio-site"
             goals={[
-                "Implemented a responsive carousel using react-slick",
-                "Learned custom domain deployment using Vercel and domain.com",
+                "Implement a responsive carousel using react-slick",
+                "Learn custom domain deployment using Vercel and domain.com",
             ]}
         />
     );

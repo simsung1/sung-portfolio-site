@@ -21,8 +21,8 @@ export default function JavaPage() {
                         using Java’s Swing library."
             techStack={["Java"]}
             goals={[
-                "Practiced overriding the built-in toString() method in custom objects to produce formatted output",
-                "Explored multiple JFrame layout options within the Swing library to make the program visually appealing",
+                "Practice overriding the built-in toString() method in custom objects to produce formatted output",
+                "Explore multiple JFrame layout options within the Swing library to make the program visually appealing",
             ]}
         />
     );

@@ -19,8 +19,8 @@ export default function InProgressPage() {
                         and Polymorphism are all practiced in this project. "
             techStack={["Java"]}
             goals={[
-                "Implemented a responsive carousel using react-slick",
-                "Incorporates user input handling and game loop logic for turn-based decision making.",
+                "Implement a responsive carousel using react-slick",
+                "Incorporate user input handling and game loop logic for turn-based decision making.",
             ]}
         />
     );
