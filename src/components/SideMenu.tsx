@@ -43,7 +43,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                         <Link href="/#contact">Contact</Link>
                     </li>
                     <li>
-                        <Link href="/#" onClick={onClose}>
+                        <Link href="/extras" onClick={onClose}>
                             Extras
                         </Link>
                     </li>

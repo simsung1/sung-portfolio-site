@@ -49,7 +49,7 @@ export default function Nav() {
                                 <Link href="/#contact">Contact</Link>
                             </li>
                             <li className="font-samsung font-bold">
-                                <Link href="#extras">Extras</Link>
+                                <Link href="/extras">Extras</Link>
                             </li>
                         </ul>
                     </div>
