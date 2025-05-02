@@ -49,7 +49,7 @@ export const projExperiences: WorkExperience[] = [
         btmText:
             "Learned how to parse file data, read cmd line args, and do calculations on csv data.",
         gradientIndex: null,
-        href: "/projects/info1157"
+        href: "/projects/info1156"
     },
     {
         imgsrc: "/images/fractioncalc.png",
