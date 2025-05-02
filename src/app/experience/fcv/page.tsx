@@ -1,5 +1,10 @@
 import ExperienceLayout from "@/components/ExperienceLayout";
 
+export const metadata = {
+    title: "Forest City Vape Experience - Sung",
+    description: "Details about my time as a sales associate at FCV.",
+};
+
 export default function FCVPage() {
     return (
         <ExperienceLayout

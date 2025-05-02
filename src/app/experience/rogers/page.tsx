@@ -1,5 +1,10 @@
 import ExperienceLayout from "@/components/ExperienceLayout";
 
+export const metadata = {
+    title: "Rogers Associate Experience - Sung",
+    description: "My experience with Rogers as a sales associate in Toronto",
+};
+
 export default function RogersPage() {
     return (
         <ExperienceLayout

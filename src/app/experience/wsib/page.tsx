@@ -1,5 +1,10 @@
 import ExperienceLayout from "@/components/ExperienceLayout";
 
+export const metadata = {
+    title: "WSIB Experience - Sung",
+    description: "Details about my internship at WSIB.",
+};
+
 export default function WSIBPage() {
     return (
         <ExperienceLayout

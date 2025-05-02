@@ -15,6 +15,7 @@ export default function SoloCard({data}: SoloCardProps) {
                             src={data.src}
                             alt={data.alt}
                             fill
+                            sizes="75vw"
                             className={`object-contain rounded-xl`}
                         />
                     </div>

@@ -14,6 +14,7 @@ export default function DualCard({ data }: DualCardProps) {
                         src={data.src}
                         alt={data.alt}
                         fill
+                        sizes="(max-width: 768px) 75vw, 66"
                         className={`object-contain rounded-xl`}
                     />
                 </div>

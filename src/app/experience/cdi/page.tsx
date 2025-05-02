@@ -1,5 +1,10 @@
 import ExperienceLayout from "@/components/ExperienceLayout";
 
+export const metadata = {
+    title: "CDI Teaching Experience - Sung",
+    description: "Details about my time as an English Instructor in Korea.",
+};
+
 export default function CDIPage() {
     return (
         <ExperienceLayout

@@ -1,5 +1,10 @@
 import ExperienceLayout from "@/components/ExperienceLayout";
 
+export const metadata = {
+    title: "U of T Experience - Sung",
+    description: "Details about my student librarian assistant position at the uniersity.",
+};
+
 export default function UofTPage() {
     return (
         <ExperienceLayout
