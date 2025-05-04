@@ -31,7 +31,7 @@ export default function ExperienceBanner({ id, experiences }: ExperienceBannerPr
                     onNavClick={(index) => setActiveIndex(index)}
                 />
 
-                <div className="w-full overflow-x-hidden">
+                <div className="w-full overflow-x-hidden mt-4">
                     <div
                         className={`flex transition-transform duration-500 w-[500%] ${
                             activeIndex === 0
