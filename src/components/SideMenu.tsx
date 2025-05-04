@@ -31,16 +31,16 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                     className="flex flex-col items-start ml-7 gap-4 font-sharpsans font-bold text-2xl"
                 >
                     <li>
-                        <Link href="/#about">About</Link>
+                        <Link href="/#about" onClick={onClose}>About</Link>
                     </li>
                     <li>
-                        <Link href="/#experience">Experience</Link>
+                        <Link href="/#experience" onClick={onClose}>Experience</Link>
                     </li>
                     <li>
-                        <Link href="/#projects">Projects</Link>
+                        <Link href="/#projects" onClick={onClose}>Projects</Link>
                     </li>
                     <li>
-                        <Link href="/#contact">Contact</Link>
+                        <Link href="/#contact" onClick={onClose}>Contact</Link>
                     </li>
                     <li>
                         <Link href="/extras" onClick={onClose}>
