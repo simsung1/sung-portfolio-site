@@ -14,7 +14,7 @@ export default function WelcomeBanner({ id }: { id: string }) {
         <section id={id} tabIndex={-1}>
             <div className="w-full mt-10 mb-4">
                 <h1 className="text-3xl font-sharpsans text-center pt-3" tabIndex={-1}>
-                    Hi, I&apos;m Sung Min
+                    Hi, I&apos;m Sung
                 </h1>
                 <ScrollBannerNav
                     navItems={navItems}

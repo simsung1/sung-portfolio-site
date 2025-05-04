@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Icon from "@/assets/icons/hamburger.svg";
 import { useState } from "react";
