@@ -17,8 +17,8 @@ export default function PersonalPage() {
             description="What started off as a personal project for additional SQL practice 
                         has fortunately led to an opportunity to collaborate with classmates
                         and a professor over the summer! Though I cannot share any details 
-                        yet, once the project is published, I will upload pictures and share 
-                        more details."
+                        yet, once the project is published, I will share more pictures and 
+                        details."
             techStack={["Python", "SQLite", "Streamlit", "Docker"]}
             goals={[
                 "Develop an app for the Western Soccer Team",
