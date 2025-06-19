@@ -22,14 +22,14 @@ export const projExperiences: WorkExperience[] = [
         href: "/projects/progress"
     },
     {
-        imgsrc: "/images/database.png",
-        imgalt: "Screenshot of Database Creation",
+        imgsrc: "/images/momentum-3.png",
+        imgalt: "Screenshot of Momentum Project",
         bgColor: "text-white text-shadow-lg",
-        btmTitle: "DDL and DML Practice in SQL",
+        btmTitle: "Momentum Project",
         btmText:
-            "Expanding from the Case Study Data base used in class, additional practice of MySQL.",
+            "Collaborating with a group of students to develop a Python program for Western Soccer.",
         gradientIndex: null,
-        href: "/projects/personal"
+        href: "/projects/summer"
     },
     {
         imgsrc: "/images/weblab3.png",

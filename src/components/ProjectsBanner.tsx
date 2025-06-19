@@ -14,7 +14,7 @@ export default function ProjectsBanner({ id, experiences }: ProjectsBannerProps)
     const navItems = [
         "Highlight",
         "In Progress",
-        "Personal",
+        "Summer",
         "College: Web Design",
         "College: C++",
         "College: Java",
