@@ -2,7 +2,7 @@ import ProjectLayout from "@/components/ProjectLayout";
 
 export const metadata = {
     title: "Momentum Project",
-    description: "Upcoming poject to be completed with other students.",
+    description: "Upcoming project to be completed with other students.",
 };
 
 export default function PersonalPage() {
