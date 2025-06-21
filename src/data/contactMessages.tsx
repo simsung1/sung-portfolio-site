@@ -8,7 +8,7 @@ export const messages: InfoCardProps[] = [
     {
         title: "Hiring Managers and Recruiters",
         message:
-            "Thank you for taking the time to navigate my portfolio! I'm an aspiring Full-Stack Developer with a string interest in Mobile app development as well. I try to make the software that I create as intuitive as possible. I hope you will consider my application to join your team, or if you're a recruiter, I'd love to hear from you as well! Always open to discussing projects, internships, or full-time roles.",
+            "Thank you for taking the time to navigate my portfolio! I'm an aspiring Full-Stack Developer with a strong interest in Mobile app development as well. I try to make the software that I create as intuitive as possible. I hope you will consider my application to join your team, or if you're a recruiter, I'd love to hear from you as well! Always open to discussing projects, internships, or full-time roles.",
         link: "/files/SMS Resume.pdf",
         bgColor: "bg-[#F4F4F4]",
         icon: <HiDocumentDownload size={25} />,
