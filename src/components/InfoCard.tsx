@@ -18,7 +18,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
                 <div className="hidden lg:block w-1/2 z-1 aspect-[2/1] relative rounded-lg overflow-hidden">
                     {image}
                 </div>
-                <div className="flex mx-auto">
+                <div className="flex mx-auto p-1 border border-black rounded-md hover:bg-white">
                     <a
                         href={link}
                         target="_blank"
