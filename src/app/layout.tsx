@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const samsungOne = localFont({
     src: [
@@ -47,6 +48,7 @@ export default function RootLayout({
                 className={`${samsungOne.variable} ${sharpSans.variable} font-samsung antialiased`}
             >
                 {children}
+                <Analytics />
             </body>
         </html>
     );
