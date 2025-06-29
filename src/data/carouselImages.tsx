@@ -29,7 +29,7 @@ export const images: CarouselImage[] = [
                     Second Year Starts Sept 2025
                 </div>
                 <a
-                    href="https://www.fanshawec.ca/programs/cpa3-computer-programming-and-analysis-co-op/courses-next"
+                    href="https://www.fanshawec.ca/programs/cpa3-computer-programming-and-analysis/next"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-5 lg:mt-10 w-fit rounded-full bg-white text-black px-4 py-2 inline-block"
