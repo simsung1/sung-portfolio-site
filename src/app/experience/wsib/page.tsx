@@ -27,7 +27,7 @@ export default function WSIBPage() {
                     href: "https://www.wsib.ca/en/student-programs",
                 },
             ]}
-            extras={<div>Intership still in progress.</div>}
+            extras={<div>Internship still in progress.</div>}
         />
     );
 }
